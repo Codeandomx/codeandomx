@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article id="post-page">
+	<h2>{{ page.title }}</h2>		
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
+	<div class="content">
+		<!-- Bloque de anuncios 1 -->
+		{% include adsense.html %}
+		<br>
+		{{ content }}
+
+		<!-- Bloque de anuncios 2 -->
+		{% include adsense_2.html %}
+	</div>
+	<!-- Comentarios -->
+	{% include disqus.html %}
+</article>
+
