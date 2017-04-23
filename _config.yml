@@ -1,11 +1,11 @@
 # Site settings
 title: Codeando | Plataforma de cursos
 description: "Cursos y tutoriales de programación y desarrollo web"
-url: "http://codeandomx.github.io"
+url: "http://blog.codeando.org"
 author:
   name: "Paulo Andrade"
   email: "source.compu@gmail.com"
-  url: "http://codeandomx.github.io"
+  url: "http://blog.codeando.org"
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
