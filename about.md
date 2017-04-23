@@ -21,4 +21,4 @@ Puedes seguirnos en las siguientes redes.-
 * [@codeando_org](https://twitter.com/codeando_org)
 * [@paulo_866](https://twitter.com/paulo_866)
 * [Github](https://github.com/codeandomx)
-* [Youtube](https://youtube.com)
+* [Youtube](https://www.youtube.com/channel/UCS5t7Ynr2sPoWgUfsYHrksA)
