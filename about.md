@@ -1,21 +1,24 @@
 ---
 layout: page
-title: About Emerald
+title: Acerca de codeando
 ---
-## About
-Emerald is a minimal theme created for Jekyll. The main purpose of Emerald is to provide a clear theme for those who want a blog ready to use, focused on the content and mobile-first.
+## Acerca de
 
-For further details on Emerald, please visit the [repository on Github](https://github.com/KingFelix/emerald/).
+Codeando es una comunidad sin animo de lucro, se trata de una plataforma donde impartimos cursos y talleres gratuitos sobre programación y desarrollo de páginas web, ingresa ahora mismo, registrate y se parte de la comunidad.
 
-![Emerald](img/Emerald01.png "Emerald")
+[Plataforma codeando](http://codeando.org)
 
-### Setup
-Emerald may be installed by simply downloading the .zip folder from the [repository on Github](https://github.com/KingFelix/emerald/archive/master.zip).
+### Sobre este blog
 
-After extracting the content from the folder into the selected directory, you can type ``jekyll serve`` from the terminal, than open your browser to ``0.0.0.0:4000/emerald/`` and you will find it there.
+En este blog encontraras tutoriales sobre las tecnologías más utilizadas, asi como las más populares de programación.
 
-Additionally it is possible to fork the repository and use Github Pages as hosting. By following this way it will be enough to change the ``baseurl`` value into the ``_config.yml`` file, with the directory name of your project (for example /blog) or simply with a "/" (slash) if you want install Emerald in the root. 
+Además de ser un complemento para los tutoriales impartidos en la plataforma de cursos.
 
-Last but not least: the [Jekyll documentation](http://jekyllrb.com) is the best starting point!
+### Siguenos
 
-Enjoy!
+Puedes seguirnos en las siguientes redes.-
+
+* [@codeando_org](https://twitter.com/codeando_org)
+* [@paulo_866](https://twitter.com/paulo_866)
+* [Github](https://github.com/codeandomx)
+* [Youtube](https://youtube.com)
