@@ -7,6 +7,15 @@ author:
   email: "source.compu@gmail.com"
   url: "http://blog.codeando.org"
 
+# Where things are
+collections:
+  my_categories:
+    output: true
+    permalink: /categoria/:name/
+  my_tags:
+    output: true
+    permalink: /tag/:name/
+
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
@@ -25,10 +34,25 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: ""
+      type: my_categories
+    values:
+      layout: categories
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: tags
 
 # Plugins
 gems:
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Custom variables
 version: "1.1.0"

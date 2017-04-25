@@ -169,6 +169,10 @@
       margin-bottom: 1.3334em;
     }
 }
+#post-page #author
+{
+  color: #737373;
+}
 
 .post+.post:before {
     display: block;
@@ -275,4 +279,29 @@ footer {
   color: $background-color;
   text-align: center;
   padding: 0.6667em 0;
+}
+
+/* Tags */
+
+.tags
+{
+  list-style: none;
+}
+.tags li
+{
+  background-color: $main-color;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.tags li:hover
+{
+  cursor: pointer;
+  opacity: 0.7;
+}
+.tags a
+{
+  color: #fff;
 }

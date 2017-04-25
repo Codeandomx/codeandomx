@@ -3,7 +3,16 @@ layout: default
 ---
 <article id="post-page">
 	<h2>{{ page.title }}</h2>		
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}<br>Autor: {{ page.author }}</time>
+	
+	<ul class="tags">
+		{% for tag in page.tags %}
+			<li>
+				<a href="{{ site.baseurl }}tag/{{ tag }}">{{ tag }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+
 	<div class="content">
 		<!-- Bloque de anuncios 1 -->
 		{% include adsense.html %}
