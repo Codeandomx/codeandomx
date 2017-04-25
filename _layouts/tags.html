@@ -22,7 +22,7 @@ layout: default
       {% endunless %}
       <li class="post">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}<br>Autor: {{ post.author }}</time>
         <p>{{ post.content | strip_html | truncatewords:50 }}</p>
       </li>
       {% if forloop.last %}
