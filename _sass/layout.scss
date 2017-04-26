@@ -145,6 +145,16 @@
     vertical-align: middle;
     color: #176DEE;
   }
+  h2 {
+    display: inline-block;
+    font-family: 'Signika', sans-serif; //Emerald logo font
+    font-weight: 600;
+    vertical-align: middle;
+    color: #176DEE;
+    font-size: 2.25em;
+    line-height: 1.3333em;
+    padding: 0.33335em 0;
+  }
   &:after {
   	display: block;
     content: '';
@@ -172,6 +182,10 @@
 #post-page #author
 {
   color: #737373;
+}
+#post-page h2
+{
+  font-size: 1.5em; 
 }
 
 .post+.post:before {
