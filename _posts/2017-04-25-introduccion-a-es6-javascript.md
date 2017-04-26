@@ -7,7 +7,7 @@ tags: javascript es6
 
 ![Ecma Script 6](/img/es6.jpg)
 
-**ECMAScript 6** mejor conocido por los desarrolladores como **ES6** o** ES2015** es el nuevo estándar para trabajar con **Javascript**, actualmente la mayoría de los navegadores modernos ya cuentan con un **soporte bastante bueno para este estándar**, es por eso que si te gusta trabajar con Javascript (que es lo más seguro) debas de actualizarte y empezar a trabajar con esta versión ya que nos ofrece una gran variedad de novedades y ventajas al programar.
+**ECMAScript 6** mejor conocido por los desarrolladores como **ES6** o **ES2015** es el nuevo estándar para trabajar con **Javascript**, actualmente la mayoría de los navegadores modernos ya cuentan con un **soporte bastante bueno para este estándar**, es por eso que si te gusta trabajar con Javascript (que es lo más seguro) debas de actualizarte y empezar a trabajar con esta versión ya que nos ofrece una gran variedad de novedades y ventajas al programar.
 
 ## Por que utilizar ES6
 
@@ -49,7 +49,7 @@ var Greeter = (function ()
         this.greeting = msg;
     }
     Greeter.prototype.greet = function () {
-        return "Hello, " + this.greeting;
+        return 'Hello, ' + this.greeting;
     };
     return Greeter;
 }());
@@ -70,7 +70,7 @@ class Greeter {
 		
     // método
     greet(){
-        return "Hello, " + this.greeting;
+        return 'Hello, ' + this.greeting;
     }
 }
 
