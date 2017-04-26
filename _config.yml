@@ -53,6 +53,7 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-admin
 
 # Custom variables
 version: "1.1.0"
