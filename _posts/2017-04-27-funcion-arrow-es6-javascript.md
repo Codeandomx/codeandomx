@@ -1,5 +1,5 @@
 ---
-title: Función arrow ES6
+title: Función arrow ES6 (javascript)
 author: Paulo Andrade
 categories: es6
 tags: javascript es6
