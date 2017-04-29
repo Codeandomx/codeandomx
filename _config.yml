@@ -1,64 +1,49 @@
-# Site settings
+---
 title: Codeando | Plataforma de cursos
-description: "Cursos y tutoriales de programación y desarrollo web"
-url: "http://blog.codeando.org"
+description: Cursos y tutoriales de programación y desarrollo web
+url: http://blog.codeando.org
 author:
-  name: "Paulo Andrade"
-  email: "source.compu@gmail.com"
-  url: "http://blog.codeando.org"
-
-# Where things are
+  name: Paulo Andrade
+  email: source.compu@gmail.com
+  url: http://blog.codeando.org
 collections:
   my_categories:
     output: true
-    permalink: /categoria/:name/
+    permalink: "/categoria/:name/"
   my_tags:
     output: true
-    permalink: /tag/:name/
-
-# Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+    permalink: "/tag/:name/"
+baseurl: "/"
 markdown: kramdown
-source: .
-destination: ./_site
-permalink: /:title
+source: "."
+destination: "./_site"
+permalink: "/articulos/:title.html"
 paginate: 8
-paginate_path: /page:num/
+paginate_path: "/page:num/"
 comments: true
-
-# Default values
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: my_categories
-    values:
-      layout: categories
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: tags
-
-# Plugins
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: my_categories
+  values:
+    layout: categories
+- scope:
+    path: ''
+    type: my_tags
+  values:
+    layout: tags
 gems:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-admin
-
-# Custom variables
-version: "1.1.0"
-
-# Options
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-admin
+version: 1.1.0
 custom_header: false
 custom_nav_footer: false
 reverse: true
