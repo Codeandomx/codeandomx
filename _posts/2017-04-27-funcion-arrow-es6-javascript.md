@@ -7,7 +7,7 @@ tags: javascript es6
 
 ![ES6 función arrow](/img/es6.jpg)
 
-Una de las **novedades de Javascript** en su estándar [ES6 (ECMAScript 6)](/introduccion-a-es6-javascript) es el uso de las **funciones arrow**, entre las mejoras que incorpora este tipo de función es la **mejora en la sintaxis** del código (siendo más limpio y legible), así como el **ámbito de las variables** con las que trabaja (sobretodo con el uso de la variable this).
+Una de las **novedades de Javascript** en su estándar [ES6 (ECMAScript 6)](/articulos/introduccion-a-es6-javascript.html) es el uso de las **funciones arrow**, entre las mejoras que incorpora este tipo de función es la **mejora en la sintaxis** del código (siendo más limpio y legible), así como el **ámbito de las variables** con las que trabaja (sobretodo con el uso de la variable this).
 
 ## Que son las funciones arrow
 

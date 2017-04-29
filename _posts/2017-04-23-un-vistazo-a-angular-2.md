@@ -1,11 +1,12 @@
 ---
-author: Paulo Andrade
 title: Un vistazo a Angular 2
-categories: [angular2]
+author: Paulo Andrade
+categories:
+- angular2
 tags: angular javascript
 ---
 
-![Angular 2](/img/angular.jpg)
+![Angular 2](/img/angular2.jpg)
 
 **Angular 2** es el resultado de la evolución de **AngularJS** (mejor conocido como AngularJS 1.x), si eres un desarrollador que viene de la versión anterior no te costara mucho trabajo adaptarte a la nueva si eres constante en el uso de las nuevas tecnologías que conlleva este framework (sobre todo si trabajaste desde la versión 1.5+ donde se incluyen los web components).
 

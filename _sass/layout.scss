@@ -172,6 +172,18 @@
     list-style-type: none;
   }
 }
+#posts img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+#post-content {
+  display: inline-block;
+  vertical-align: top;
+  text-align: justify;
+}
 
 #post-page {
   margin-bottom: 1.5em;
@@ -182,6 +194,15 @@
 #post-page #author
 {
   color: #737373;
+}
+#post-page h1
+{
+  font-size: 1.7em;
+}
+#post-page strong
+{
+  font-weight: 600;
+  color: #444;
 }
 #post-page h2
 {
