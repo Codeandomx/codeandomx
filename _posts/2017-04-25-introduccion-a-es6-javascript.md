@@ -117,3 +117,5 @@ Javascript lo pedía a gritos, ahora ya **es posible trabajar con módulos en Ja
 ## Conclusiones
 
 Las novedades anteriores en mi punto de vista son las más importantes, pero no podemos dejar de lado incorporaciones a ES6 como el uso de las variables Let y Const, valores por defecto, uso de template string entre otras más, te recomiendo estar atento a los siguientes artículos.
+
+Que tengan feliz código!.

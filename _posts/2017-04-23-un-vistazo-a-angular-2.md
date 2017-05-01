@@ -31,3 +31,5 @@ Ahora hablemos del **SEO**, ya que AngularJS 1.x al ser una SPA (Single Page App
 ## Conclusiones
 
 Lo anterior desde mi punto de vista es lo más importante en cuanto al cambio de las versiones de Angular, lo que nos falta lo vamos aprender poco a poco con forme avancemos en el tema.
+
+Que tenga feliz código!.
