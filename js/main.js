@@ -38,4 +38,37 @@ function menuClick() {
 	}
 }
 
+var search = function ()
+{
+	// Buscador
+	if(document.getElementById('search-button')){
+		document.getElementById('search-button').onclick = function ()
+		{
+			document.getElementById('search').style.transform = 'translateY(0)';
+			document.getElementById('search').style.webkitTransform = 'translateY(0)';
+			document.getElementById('search-button').style.display = 'none';
+			document.getElementById('search-close').style.display = 'block';
+		}
+	}
+
+	if(document.getElementById('search-close')){
+		document.getElementById('search-close').onclick = function ()
+		{
+			document.getElementById('search-close').style.display = 'none';
+			document.getElementById('search').style.transform = 'translateY(-100%)';
+			document.getElementById('search').style.webkitTransform = 'translateY(-100%)';
+			document.getElementById('search-button').style.display = 'block';
+			document.getElementById('search-q').innerHTML = '';
+		}
+	}
+
+	if(document.getElementById('search-box')){
+		document.getElementById('search-box').onsubmit = function ()
+		{
+			document.getElementById('search-q').innerHTML = '';
+		}
+	}
+}
+
 menuClick();
+search();
