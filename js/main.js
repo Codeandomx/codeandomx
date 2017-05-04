@@ -40,7 +40,7 @@ function menuClick() {
 
 var search = function ()
 {
-	// Buscador
+	// Mostramos el buscador
 	if(document.getElementById('search-button')){
 		document.getElementById('search-button').onclick = function ()
 		{
@@ -48,9 +48,11 @@ var search = function ()
 			document.getElementById('search').style.webkitTransform = 'translateY(0)';
 			document.getElementById('search-button').style.display = 'none';
 			document.getElementById('search-close').style.display = 'block';
+			document.getElementById('search-q').focus();
 		}
 	}
 
+	// Cerramos el buscador
 	if(document.getElementById('search-close')){
 		document.getElementById('search-close').onclick = function ()
 		{
@@ -62,10 +64,18 @@ var search = function ()
 		}
 	}
 
-	if(document.getElementById('search-box')){
-		document.getElementById('search-box').onsubmit = function ()
+	// Limpiamos el input del buscador
+	if(document.getElementById('submit')){
+		document.getElementById('submit').onclick = function ()
 		{
-			document.getElementById('search-q').innerHTML = '';
+			var data = document.getElementById('search-q').value;
+			var url = 'https://cse.google.com.mx/cse?cx=partner-pub-0593566584451788:4085293215&ie=UTF-8&q='+data+'#gsc.tab=0&gsc.q='+data+'&gsc.page=1';
+
+			if(data.length > 0){
+				location.href = url;
+			}
+
+			return null;
 		}
 	}
 }
