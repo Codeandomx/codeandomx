@@ -207,14 +207,14 @@
   }
   h1 {
     display: inline-block;
-  	font-family: 'Signika', sans-serif; //Emerald logo font
+  	font-family: 'Lato','Signika', sans-serif; //Emerald logo font
     font-weight: 600;
     vertical-align: middle;
     color: #176DEE;
   }
   h2 {
     display: inline-block;
-    font-family: 'Signika', sans-serif; //Emerald logo font
+    font-family: 'Lato', 'Signika', sans-serif; //Emerald logo font
     font-weight: 600;
     vertical-align: middle;
     color: #176DEE;
@@ -327,9 +327,15 @@ code {
 }
 .content p
 {
-  font-size: 18px !important;
-  line-height: 1.5em;
+  font-size: 20px !important;
+  line-height: 1.6em;
   text-align: justify;
+}
+.content p strong
+{
+  font-size: 21px !important;
+  font-weight: bold;
+  color: #111;
 }
 .content ul, .content ol {
   line-height: 1.5em; /* 24px/16px */
