@@ -41,7 +41,7 @@ Veamos un ejemplo de código bloqueante en Javascript.-
 
 {% highlight javascript linenos %}
 // Importamos la libreria file system
-import fs from 'fs';
+const fs = require('fs');
 
 // Primer mensaje
 console.log('primer mensaje');
@@ -67,7 +67,7 @@ En cambio si **usamos NodeJS asíncrono** tendríamos el siguiente código (solo
 
 {% highlight javascript linenos %}
 // Importamos la libreria file system
-import fs from 'fs';
+const fs = require('fs');
 
 // Primer mensaje
 console.log('primer mensaje');
@@ -101,7 +101,7 @@ Entonces **una promesa es una excelente alternativa para trabajar de forma asín
 
 {% highlight javascript linenos %}
 // Importamos la libreria file system
-import fs from 'fs';
+const fs = require('fs');
 
 // Primer mensaje
 console.log('primer mensaje');

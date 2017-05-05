@@ -35,7 +35,7 @@ Empecemos viendo un ejemplo sobre como tendríamos que **crear una linea múltip
 
 {% highlight javascript linenos %}
 // Creamos un string multilinea
-var multiLine = "Esta es una \nmultilínea";
+var multiLine = 'Esta es una \nmultilínea';
 
 // Lo mostramos en consola
 console.log(multiLine);
@@ -104,7 +104,7 @@ Esta es la **forma más avanzada para trabajar con las template strings**, se tr
 
 {% highlight js linenos %}
 // Creamos nuestras variables de prueba
-var name = "Paulo";
+var name = 'Paulo';
 var age = 30;
 
 // Declaramos la función con preprocesado
@@ -145,7 +145,7 @@ Además mediante el método raw() del array literals podemos acceder a la cadena
 
 {% highlight javascript linenos %}
 // Creamos nuestras variables de prueba
-var name = "Paulo";
+var name = 'Paulo';
 var age = 30;
 
 // Declaramos la función con preprocesado
