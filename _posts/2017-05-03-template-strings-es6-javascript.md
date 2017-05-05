@@ -102,7 +102,7 @@ En el ejemplo anterior tenemos un template string en donde utilizamos variables 
 
 Esta es la **forma más avanzada para trabajar con las template strings**, se trata de una **función que nos puede retornar una cadena con datos preprocesados**, esta función recibe dos parámetros, el primero es un array con las literales de cadenas que utilicemos y el segundo es un array con los datos que utilicemos (datos ya procesados), veamos un ejemplo.-
 
-{% highlight javascript linenos %}
+{% highlight js linenos %}
 // Creamos nuestras variables de prueba
 var name = "Paulo";
 var age = 30;

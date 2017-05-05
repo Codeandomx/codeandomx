@@ -15,6 +15,9 @@ collections:
     permalink: "/tag/:name/"
 baseurl: "/"
 markdown: kramdown
+kramdown:
+input: GFM
+syntax_highlighter: rouge
 source: "."
 destination: "./_site"
 permalink: "/articulos/:title.html"
@@ -43,6 +46,7 @@ gems:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-admin
+- rouge
 version: 1.1.0
 custom_header: false
 custom_nav_footer: false

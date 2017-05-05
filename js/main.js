@@ -60,7 +60,7 @@ var search = function ()
 			document.getElementById('search').style.transform = 'translateY(-100%)';
 			document.getElementById('search').style.webkitTransform = 'translateY(-100%)';
 			document.getElementById('search-button').style.display = 'block';
-			document.getElementById('search-q').innerHTML = '';
+			document.getElementById('search-q').value = '';
 		}
 	}
 
