@@ -335,7 +335,17 @@ code {
 {
   font-size: 21px !important;
   font-weight: bold;
-  color: #111;
+  color: #000;
+}
+.content p a
+{
+  transition: 0.25s all ease-in-out;
+}
+.content p a:hover
+{
+  background-color: $main-color;
+  color: #fff;
+  border-radius: 3px;
 }
 .content ul, .content ol {
   line-height: 1.5em; /* 24px/16px */
