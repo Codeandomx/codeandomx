@@ -2,7 +2,7 @@
 title: Arquitectura de componentes en angular
 author: Paulo Andrade
 categories: angular2
-tags: angular, javascript
+tags: angular javascript
 ---
 
 ![Angular](/img/angular2.jpg)
