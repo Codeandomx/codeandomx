@@ -91,7 +91,7 @@ $ ng generate component components/inicio --module modules/inicio/inicio-routing
 
 Una ves terminado de crearse, tendremos una estructura de archivo en nuestro proyecto como la siguiente.-
 
-[Estructura proyecto Angular](/img/estructura_router.jpg)
+![Estructura proyecto Angular](/img/estructura_router.jpg)
 
 En resumen se creo un directorio "modules" donde vamos a crear todos los módulos para nuestro proyecto y también se creo el directorio "components" donde vamos a crear todos los componentes de nuestro proyecto, y dentro de estos directorios ya tenemos el modulo y componente que necesitamos (llamado "inicio").
 
