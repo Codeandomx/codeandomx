@@ -6,4 +6,25 @@
 	left: 0px;
 	right: 0px;
 	background-color: #222;
+	display: none;
+}
+
+/****************************************************************
+MEDIA QUERYS
+****************************************************************/
+
+@media (min-width: 300px) and (max-width: 480px){
+	#adsense-mobil
+	{
+		display: block;
+	}
+}
+@media (min-width: 481px) and (max-width: 750px){
+	#adsense-mobil
+	{
+		display: block;
+	}
+}
+@media (min-width: 751px) and (max-width: 950px){
+		
 }
