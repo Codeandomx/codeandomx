@@ -30,7 +30,7 @@ installing componen/articulos/arquitectura-de-componentes-en-angular.htmlt
     update src/app/app.module.ts
 {% endhighlight %}
 
-Si leiste el articulo sobre [arquitectura de componentes en Angular](/articulos/arquitectura-de-componentes-en-angular.html) ya estarás familiarizado con los archivos que se acaban de crear y entenderás la funcionalidad de cada archivo.
+Si leiste el articulo sobre [arquitectura de componentes en Angular](/articulos/arquitectura-de-componentes-en-angular.html) ya estarás familiarizado con los archivos que se acaban de crear y entenderás la funcionalidad de cada uno.
 
 ## Analizando el componente creado
 
@@ -77,7 +77,7 @@ export class DemoComponent implements OnInit
             { name: 'Blog Codeando', url: 'http://blog.codeando.org' },
             { name: 'Github', url: 'https://github.com/codeandomx' },
             { name: 'Twitter', url: 'https://twitter.com/codeando_org' },
-            { name: 'Facebook', url: 'https://facebook.com/programacion.azteca' }
+            { name: 'Facebook', url: 'https://facebook.com/codeando.org' }
         ];
     }
 }
@@ -125,6 +125,14 @@ export class AppModule { }
 {% endhighlight %}
 
 En la linea 7 se importa nuestro componente y en la linea 12 declaramos el componente en la propiedad "declarations" para que de esta forma pueda estar disponible en el momento que lo vallamos utilizar.
+
+Si necesitas que el componente nuevo sea declarado en otro modulo, lo puedes indicar al momento de crearlo mediante el flag "--modulo" como se muestra a continuación.-
+
+{% highlight javascript linenos %}
+$ ng generate component name_component --module path_module
+{% endhighlight %}
+
+> Solo hay que cambiar el nombre del componente y el path_module es la ubicacion relativa del modulo, por ejemplo.- "modules/demo.module".
 
 ## Utilizar el componente
 

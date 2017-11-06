@@ -1,5 +1,5 @@
 ---
-title: Arquitectura de componentes en angular
+title: Arquitectura de componentes en Angular
 author: Paulo Andrade
 categories: angular2
 tags: angular javascript
