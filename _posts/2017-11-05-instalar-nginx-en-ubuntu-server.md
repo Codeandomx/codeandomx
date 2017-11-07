@@ -93,7 +93,7 @@ Entre las lineas importantes menciono las siguientes.-
 Ahora solo guardamos el archivo (ctr + o) y salimos del mismo (ctr + x) y comprobamos que no exista errores de sintaxis mediante el siguiente comando.-
 
 {% highlight javascript linenos %}
-$ sudo nginx - t
+$ sudo nginx -t
 {% endhighlight %}
 
 Y nos mostrara un mensaje como el siguiente si todo marcha bien.-
@@ -174,11 +174,17 @@ Nginx HTTP (v6)            ALLOW       Anywhere (v6)
 
 Ya podemos servir nuestra aplicación.
 
+> Como recomendación, lo más seguro es que administres tu servidor mediante una conexión SSH, por lo tanto, dale permisos al firewall de nginx para permitir el acceso por el puerto 22 con el comando "sudo ufw allow 'OpenSSH'".
+
 ## Mostrar nuestra aplicación
 
 Por ultimo solo debemos acceder a nuestro dominio y nos deberá de mostrar el mensaje "Hello codeando".
 
 > Si no lo muestra, reinicia el servidor Nginx para que surtan efecto los cambios.
+
+En caso de que no configuraras el path y lo dejaras con su ruta por defecto, al ingresar al navegador nos mostraria lo siguiente.-
+
+![Pagina de inicio de nginx](/img/nginx_homepage.jpg)
 
 ## Que pasa si no tengo un dominio?
 
