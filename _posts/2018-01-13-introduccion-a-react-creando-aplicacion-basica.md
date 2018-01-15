@@ -61,18 +61,18 @@ npm install --save-dev react react-dom
 Ahora vamos empezar a configurar el proceso automatizado de transpilación de JSX a JS, para ello necesitamos instalar gulp de forma global con el siguiente comando.-
 
 {% highlight javascript linenos %}
-npm install -g gulp
+npm install -g gulp babel-cli
 {% endhighlight %}
 
 Instalamos las dependencias con las que vamos a trabajar.-
 
 {% highlight javascript linenos %}
-npm install --save-dev babel-preset-es2015 browserify gulp gulp-babel gulp-notify gulp-util gulp-watch vinyl-buffer vinyl-source-stream babel-preset-react babel-core babel babel-register @babel/regiser
+npm install --save-dev babel-preset-env browserify gulp gulp-babel gulp-notify gulp-util gulp-watch vinyl-buffer vinyl-source-stream babel-preset-react babel-core babel-cli babel-register @babel/regiser
 {% endhighlight %}
 
 El uso que les vamos a dar a las librerías instaladas es el siguiente.-
 
-* [babel-preset-es2015](https://www.npmjs.com/package/babel-preset-es2015).- Nos proporsiona todos los plugins de es2015 para tener compatibilidad con ES6.
+* [babel-preset-env](https://www.npmjs.com/package/babel-preset-env).- Nos proporsiona todos los plugins de es2015 para tener compatibilidad con ES6.
 * [browserify](https://www.npmjs.com/package/browserify).- Analiza recursivamente todas las llamas a los require de nuestra aplicación para entregar un solo paquete al navegador. 
 * [gulp](https://www.npmjs.com/package/gulp).- Son herramientas de automatización de tareas para nuestro proyecto.
 * [gulp-babel](https://www.npmjs.com/package/gulp-babel).- Nos proporciona herramientas de automatización de transpilación de ES6 a ECMAScript2015 con gulp.
@@ -81,7 +81,7 @@ El uso que les vamos a dar a las librerías instaladas es el siguiente.-
 * [vinyl-buffer](https://www.npmjs.com/package/vinyl-buffer).- Permite utilizar archivos de vinyl en buffers.
 * [vinyl-source-stream](https://www.npmjs.com/package/vinyl-source-stream).- Permite utilizar flujos de texto convencionales al inicio de gulp logrando una interoperabilidad más agradable con el ecosistema de flujo npm existente.
 * [babel-preset-react](https://www.npmjs.com/package/babel-preset-react).- Proporciona todos los plugins de React para utilizarlos con babel.
-* [babel](https://www.npmjs.com/package/babel).- Nos ayudara a utilizar ES6 dentro de nuestro archivo gulpfile.
+* [babel-cli](https://www.npmjs.com/package/babel-cli).- Nos ayudara a utilizar ES6 dentro de nuestro archivo gulpfile.
 
 El siguiente paso es crear el archivo "gulpfile.babel.js" donde utilizaremos gulp para crear las tareas de automatización, una ves creado el archivo importamos las librerías anteriores.-
 
@@ -103,7 +103,7 @@ Creamos las tareas que transpilaran el código JSX a JS.-
 gulp.task('transform', () => {
     return gulp.src('./app/src/**/*.jsx')
         .pipe(babel({
-            presets: ["react", "es2015"]
+            presets: ["react", "env"]
         }))
         .pipe(gulp.dest('./app/dist'));
 });
@@ -130,7 +130,7 @@ Por ultimo vamos a crear el archivo ".babelrc" para terminar de configurar babel
 
 {% highlight javascript linenos %}
 {
-    "presets": ["es2015", "react"]
+    "presets": ["env", "react"]
 }
 {% endhighlight %}
 
@@ -259,5 +259,10 @@ Pueden ingresar al repositorio de github para comparar el código en el siguient
 [github/codeandomx](https://github.com/codeandomx/development-environment-react)
 
 > Recuerda que copiar el código no es malo, pero no te ayudara a comprender, te recomiendo escribir todo desde 0.
+
+Si te interesa el tema puedes continuar con los siguientes enlaces.-
+
+* Articulo siguiente: [Introducción a JSX](/articulos/introduccion-a-jsx.html)
+* Curso: [Curso de React](https://github.com/Codeandomx/curso-de-introduccion-a-react)
 
 Que tengan feliz código.
