@@ -61,7 +61,7 @@ Lo primero a notar es que JSX es considerado una expresión por lo tanto no nece
 En la linea 8 utilizamos un elemento div al cual le asignamos un atributo (una clase), pero note que el atributo no se llama class sino className, esto se hace así por una simple razón, En Javascript (ES6) class es una palabra reservada del lenguaje y no podemos utilizarla para otros fines es por eso que se opto por llamar a las clases (CSS) como className.
 
 {% highlight javascript linenos %}
-<div className="main">
+<div className="main">...</div>
 {% endhighlight %}
 
 ### Elementos HTML con hijos (childrens)
@@ -72,6 +72,7 @@ En la linea 8 y 9 vemos como el div contiene 3 elementos hijos, tal y como lo ha
 // Utilizando JSX
 <div className="main">
         <h1>Hola!</h1>
+</div>
 				
 // Sin utilizar JSX
 react.createElement(
@@ -151,6 +152,7 @@ La conclusión absoluta es que JSX nos simplifica la vida al trabajar con React,
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
 * Articulo anterior: [Introducción a React](/articulos/introduccion-a-react-creando-aplicacion-basica.html)
+* Articulo siguiente: [Componentes, props y estados](/articulos/componentes-props-y-estados-con-react.html)
 * Curso: [Curso de React](https://github.com/Codeandomx/curso-de-introduccion-a-react)
 
 Que tengan feliz código!
