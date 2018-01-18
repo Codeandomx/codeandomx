@@ -5,7 +5,7 @@ categories: reactjs
 tags: react javascript
 ---
 
-![Componentes con react](/img/react.jpg)
+![Componentes con react](http://blog.codeando.org/img/react.jpg)
 
 El desarrollo de [aplicaciones web con react](/articulos/introduccion-a-react-creando-aplicacion-basica.html) se vuelve realmente fácil si utilizamos **JSX para crear las vistas y lógica de estas**, en este articulo abarcaremos el tema de los componentes (components) y sus características, claro en complemento con JSX para facilitarnos aun más el desarrollo, pero sobre todo el mantenimiento (corregir errores y/o hacer crecer el proyecto) de nuestra web haciéndola de alguna forma escalable.
 
