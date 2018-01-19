@@ -275,6 +275,9 @@
 {
   font-size: 1.5em; 
 }
+#post-page li {
+  font-size: 18px !important;
+}
 
 .post+.post:before {
     display: block;
@@ -327,13 +330,13 @@ code {
 }
 .content p
 {
-  font-size: 20px !important;
+  font-size: 18px !important;
   line-height: 1.6em;
   text-align: justify;
 }
 .content p strong
 {
-  font-size: 21px !important;
+  font-size: 19px !important;
   font-weight: bold;
   color: #000;
 }
