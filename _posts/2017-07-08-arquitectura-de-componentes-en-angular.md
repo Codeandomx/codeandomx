@@ -33,9 +33,9 @@ export class AppComponent {
 }
 {% endhighlight %}
 
-Ahora vamos a analizar el código, en la linea 1 se importa "Component" del núcleo de angular, "Component" es un decorador que utiliza angular para poder marcar una clase como un componente de angular y de esta forma proporcionar metadatos adicionales que determinan cómo se debe procesar, instanciar y utilizar el componente en tiempo de ejecución de nuestra aplicación, puedes obtener mas información sobre el decorador componente en la [documentación oficial de  Angular](https://angular.io/api/core/Component).
+Ahora vamos a analizar el código, en la linea 1 se importa "Component" del núcleo de angular, "Component" es un decorador que utiliza angular para poder marcar una clase como un componente de angular y de esta forma proporcionar metadatos adicionales que determinan cómo se debe procesar, instanciar y utilizar el componente en tiempo de ejecución de nuestra aplicación, puedes obtener mas información sobre el decorador Componente en la [documentación oficial de  Angular](https://angular.io/api/core/Component).
 
-> Un **componente en Angular** facilita la escritura de una aplicación de forma similar a la utilización de **Web Components** siendo este el nuevo estilo de arquitectura de aplicación de Angular.  Ventajas de los componentes:  Configuración más sencilla que las simples; Optimizado para la arquitectura basada en componentes.
+> Un **componente en Angular** facilita la escritura de una aplicación de forma similar a la utilización de **Web Components** siendo este el nuevo estilo de arquitectura de aplicación de Angular.  Ventajas de los componentes:  Configuración más sencilla; Optimizado para la arquitectura basada en componentes.
 
 > Los decoradores forman parte de [ES6](/articulos/introduccion-a-es6-javascript.html) y dedicare un articulo completo para explicar su funcionamiento.
 
@@ -49,11 +49,11 @@ Por ultimo en las lineas 9 a 11 se exporta una clase con el nombre de nuestro co
 
 ### app.component.css
 
-En este archivo se coloca el código CSS que el componente principal va a utilizar, por defecto el archivo esta vació.
+En este archivo se coloca el código CSS que el componente principal va a utilizar, por defecto el archivo esta vació. Cabe mencionar que el CSS declarado en este archivo solo afrectara al componente al que pertenece.
 
 ### app.component.html
 
-Se trata del template para nuestro componente, en el podemos estructurarlo mediante HTML y con ayuda de algunas directivas de Angular darle funcionalidad, al crear la aplicación se tiene el siguiente código por defecto.-
+Se trata del template para nuestro componente, lo podemos estructurar mediante HTML y con ayuda de algunas directivas de Angular darle funcionalidad, al crear la aplicación se tiene el siguiente código por defecto.-
 
 {% highlight html linenos %}
 <h1>
@@ -94,11 +94,11 @@ export class AppModule { }
 
 Por el momento solo nos importa entender algunas lineas de código, empezamos con la linea 6, en esta linea importamos el **componente principal** descrito anteriormente, en la linea 9 a 11 mediante la propiedad "declarations" se esta declarando al componente principal como parte del modulo, de esta forma podemos utilizarlo sin ningún problema, en esta propiedad se declaran todos los componentes que nuestra aplicación tendrá, el componente principal debe ser el primero en ser declarado.
 
-Por ultimo en la linea 18 mediante la propiedad "bootstrap" se indica que al inicializar el modulo se inicie nuestro componente también.
+Por ultimo en la linea 18 mediante la propiedad "bootstrap" se indica que al inicializar el modulo se inicie nuestro componente principal también.
 
 ## Inicializar la aplicación
 
-Al llegar a este punto se entiende el proceso que hace angular para poder trabajar con el componente principal, resumiendo se declara el componente con sus respectivos archivos (CSS, template) y después de declaran en el modulo principal de la aplicación, pero ahora solo falta saber como se inicializa dicho modulo, observen el siguiente código.-
+Al llegar a este punto se debe de entender el proceso que hace Angular para poder trabajar con el componente y modulo principal, resumiendolo, se declara el componente con sus respectivos archivos (CSS, template) y después de declaran en el modulo principal de la aplicación, pero ahora solo falta saber como se inicializa dicho modulo, observen el siguiente código.-
 
 {% highlight javascript linenos %}
 import { enableProdMode } from '@angular/core';
@@ -114,11 +114,13 @@ if (environment.production) {
 platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
-En la linea 4 importamos el modulo y en la linea 11 indicamos que cuando se inicialice la aplicación sea llamad el modulo principal.
+En la linea 4 importamos el modulo y en la linea 11 indicamos que cuando se inicialice la aplicación sea llamado el modulo principal.
+
+> Se trata del archivo "main.ts" y lo puedes encontrar en el directorio "src" del proyecto.
 
 ## Utilizar un componente
 
-Para utilizar un componente basta con llamarlo de la siguiente forma ya sea en cualquier plantilla o en el index.html de la aplicación, ejemplo.-
+Para utilizar un componente basta con llamarlo de la siguiente forma, puede ser en cualquier plantilla (componente) o directamente en el index.html de la aplicación, ejemplo.-
 
 {% highlight html linenos %}
 <!doctype html>
@@ -137,10 +139,16 @@ Para utilizar un componente basta con llamarlo de la siguiente forma ya sea en c
 </html>
 {% endhighlight %}
 
-En la linea 12 es donde mandamos llamar a nuestro componente.
+En la linea 12 es donde mandamos llamar a nuestro componente princiapl.
 
 ## Conclusiones
 
 De esta forma es como trabaja Angular, es importante entenderla para no perdernos en los siguientes artículos donde ya empezaremos a crear código.
+
+Si te interesa el tema puedes continuar con los siguientes enlaces.-
+
+* Articulo anterior: [Mi primera aplicación con Angular y Angular CLI](/articulos/mi-primera-app-con-angular-y-angular-cli.html).
+* Articulo siguiente: [Crear componentes en Angular](/articulos/crear-componentes-en-angular.html).
+* Curso: [Curso de Angular](https://github.com/Codeandomx/curso-de-introduccion-a-angular)
 
 Que tengan feliz código.
