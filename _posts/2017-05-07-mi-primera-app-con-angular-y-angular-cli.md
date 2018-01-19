@@ -11,17 +11,17 @@ En el articulo anterior vimos una [introducción a Angular](/articulos/un-vistaz
 
 ## Que necesitamos
 
-Para poder **trabajar con Angular** vamos a necesitar tener instalado [NodeJS](http://127.0.0.1:4000/articulos/introduccion-a-nodejs.html) en nuestro ordenador, ya que las dependencias a utilizar serán instaladas desde su gestor de paquetes (NPM), puedes descargar el instalador desde su [página oficial](https://nodejs.org).
+Para poder **trabajar con Angular** vamos a necesitar tener instalado [NodeJS](/articulos/introduccion-a-nodejs.html) en nuestro ordenador, ya que las dependencias a utilizar serán instaladas desde su gestor de paquetes (NPM), puedes descargar el instalador desde su [página oficial](https://nodejs.org).
 
 > Te recomiendo trabajar con la **versión LTS**, la cual nos garantiza estabilidad y soporte a largo plazo.
 
-Para saber si ya tienes instalado NodeJS puedes ejecutar la siguiente instrucción en la terminal.-
+Para comprobar si ya tenemos instalado NodeJS en nuestro sistema puedes ejecutar la siguiente instrucción en la terminal.-
 
 {% highlight javascript linenos %}
 $ node -v
 {% endhighlight %}
 
-Y nos tendrá que mostrar la versión instalada, así también podemos verificar la versión de NPM.-
+Nos tendrá que mostrar la versión instalada, así también podemos verificar la versión de NPM.-
 
 {% highlight javascript linenos %}
 $ npm -v
@@ -73,6 +73,8 @@ Donde tendremos que cambiar "project_name" por el nombre de nuestra aplicación,
 
 Una vez creado nuestro proyecto en la misma instrucción le indicamos que ingresemos a este y ahora solo falta arrancar el servidor para ver correr nuestra aplicación.
 
+> Si necesitas crear el proyecto en un directorio que ya existe simplemente ingresa al directorio y ejecuta el comando: ng new nombre_directorio_existente.
+
 ## Problema en Windows 10
 
 Si no utilizas Windows has caso omiso a esta parte del articulo, en ocasiones al tratar de instalar las dependencias a utilizar mediante npm (parte del proceso de Angular CLI) nos puede lanzar el siguiente error.-
@@ -94,7 +96,7 @@ Listo, ya puedes continuar de forma normal.
 
 ## Servidor para angular
 
-Entre las muchas herramientas que encontraremos en nuestra nueva aplicación, se encuentra un servidor para lanzar nuestras aplicaciones, para arrancarlo lo hacemos mediante la siguiente instrucción.-
+Entre las muchas herramientas que encontraremos en nuestra nueva aplicación, se encuentra un servidor para lanzar nuestras aplicaciones, para iniciarlo ejecutamos la siguiente instrucción.-
 
 {% highlight javascript linenos %}
 $ ng serve
@@ -111,5 +113,11 @@ Una vez iniciado el servidor podremos ver nuestra aplicación en la url localhos
 ## Conclusiones
 
 Esto fue solo una pequeña muestra de lo que podemos hacer con **Angular CLI**, ya que lo utilizaremos para la gestión de nuestra aplicación tanto en modo desarrollo como producción, además en este articulo vimos un ejemplo del típico **hola mundo con Angular**.
+
+Si te interesa el tema puedes continuar con los siguientes enlaces.-
+
+* Articulo anterior: [Un vistazo a Angular](/articulos/un-vistazo-a-angular-2.html)
+* Articulo siguiente: [Arquitetura de componentes en Angular](/articulos/arquitectura-de-componentes-en-angular.html)
+* Curso: [Curso de Angular](https://github.com/Codeandomx/curso-de-introduccion-a-angular)
 
 Que tengan feliz código!.
