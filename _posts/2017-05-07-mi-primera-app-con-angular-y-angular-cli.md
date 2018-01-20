@@ -9,6 +9,10 @@ tags: angular javascript
 
 En el articulo anterior vimos una [introducción a Angular](/articulos/un-vistazo-a-angular-2.html) donde hablamos de algunas comparaciones entre la versión anterior (AngularJS 1.x) y la versión nueva (llamada solamente **Angular**), donde a grandes rasgos explicaba que **Angular fue reconstruido desde cero** y por lo tanto hay un gran cambio en su funcionamiento el cual ahora esta **basado en componentes**, así como su sintaxis donde ocuparemos [trabajar con es6](/articulos/introduccion-a-es6-javascript.html) o como lo recomienda la comunidad de Angular con **TypeScript**.
 
+<div class="redes-background">
+Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-introduccion-a-angular" target="_blank">Curso de Angular</a>.
+</div>
+
 ## Que necesitamos
 
 Para poder **trabajar con Angular** vamos a necesitar tener instalado [NodeJS](/articulos/introduccion-a-nodejs.html) en nuestro ordenador, ya que las dependencias a utilizar serán instaladas desde su gestor de paquetes (NPM), puedes descargar el instalador desde su [página oficial](https://nodejs.org).

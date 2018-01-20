@@ -7,11 +7,15 @@ tags: angular javascript
 
 ![Angular](/img/angular2.jpg)
 
-En el articulo anterior explicamos en que consiste la [arquitectura del componente principal de Angular](/articulos/arquitectura-de-componentes-en-angular.html) (este componente lo obtenemos por defecto al **crear nuestro proyecto**), te recomiendo que le des una leída para que puedas tener los conocimientos sobre la función que realiza cada uno de los archivos en el componente y de esta forma se facilite la **creación de nuevos componentes**, sin más empecemos.
+En el articulo anterior explicamos en que consiste la [arquitectura del componente principal de Angular](/articulos/arquitectura-de-componentes-en-angular.html) (este componente lo obtenemos por defecto al **crear nuestro proyecto**), te recomiendo que le des una leída para que puedas tener los conocimientos sobre la función que realiza cada uno de los archivos delcomponente y de esta forma se facilite la **creación de nuevos componentes**, sin más empecemos.
+
+<div class="redes-background">
+Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-introduccion-a-angular" target="_blank">Curso de Angular</a>.
+</div>
 
 ## Crear mi primer componente
 
-Para **crear nuestro componente** vamos a utilizar [Angular CLI](/articulos/mi-primera-app-con-angular-y-angular-cli.html), al utilizar esta herramienta estaremos optimizando en gran parte nuestro trabajo, así que para empezar necesitamos abrir nuestra terminal (símbolo del sistema en Windows) y ubicarnos en la carpeta principal de nuestro proyecto y ejecutar el siguiente comando.-
+Para **crear nuestro componente** vamos a utilizar [Angular CLI](/articulos/mi-primera-app-con-angular-y-angular-cli.html), al utilizar esta herramienta estaremos optimizando en gran parte nuestro trabajo, así que para empezar necesitamos abrir la shell (símbolo del sistema en Windows) y ubicarnos en la carpeta principal de nuestro proyecto y ejecutar el siguiente comando.-
 
 {% highlight javascript linenos %}
 $ ng generate component name_component
@@ -19,14 +23,20 @@ $ ng generate component name_component
 
 > Recuerda que ng es el comando principal para utilizar **Angular CLI**, puedes obtener más información sobre este comando si ejecutas en la terminal "ng help".
 
-Antes de ejecutar el comando anterior solo hay que cambiar "name_component" por el nombre que le queremos dar a nuestro componente, por ejemplo podemos crear el componente "demo", si todo marcha bien se nos mostrara en la terminal lo siguiente.-
+Antes de ejecutar el comando anterior solo hay que cambiar "name_component" por el nombre que le queremos dar a nuestro componente, por ejemplo podemos crear el componente "demo" utilizamos el siguiente comando.-
 
 {% highlight javascript linenos %}
-installing componen/articulos/arquitectura-de-componentes-en-angular.htmlt
-    create src/app/demo/demo.component.css
-    create src/app/demo/demo.component.html
-    create src/app/demo/demo.component.spec.ts
-    create src/app/demo/demo.component.ts
+$ ng generate component components/demo
+{% endhighlight %}
+
+Nuestro componente se creara dentro del directorio components, esto lo hacemos con la finalidad de modularizar aun más nuestra aplicación, si todo marcha bien se nos mostrara en la terminal lo siguiente.-
+
+{% highlight javascript linenos %}
+installing component
+    create src/app/components/demo/demo.component.css
+    create src/app/components/demo/demo.component.html
+    create src/app/components/demo/demo.component.spec.ts
+    create src/app/components/demo/demo.component.ts
     update src/app/app.module.ts
 {% endhighlight %}
 
@@ -47,15 +57,15 @@ import { Component, OnInit } from '@angular/core';
 
 export class DemoComponent implements OnInit
 {
-   	constructor() { }
+    constructor() { }
 
-	  ngOnInit() { }
+    ngOnInit() { }
 }
 {% endhighlight %}
 
-El componente nuevo es idéntico en su estructura al componente principal de la aplicación con una sola diferencia, esta es la implementación de OnInit (el cual también se **importa desde el core de Angular**) en la linea 9, y por lo tanto podemos hacer uso del método ngOnInit().
+El componente nuevo es idéntico en su estructura al componente principal de la aplicación, con una sola diferencia, en este nuevo componente tenemos la implementación del método OnInit (el cual también se **importa desde el core de Angular**) en la linea 9.
 
-La funcionalidad de este método es la misma que el constructor de la clase del componente, solo que se recomienda el uso de ngOnInit() en lugar del constructor de la clase para inicializar las propiedades que vamos a utilizar en la clase del componente con el fin de optimizar los test que vallamos a realizar en nuestra aplicación, por ejemplo podemos declarar un objeto con sitios de interés.-
+La funcionalidad de este método es la misma que el constructor de la clase del componente, solo que se recomienda el uso de ngOnInit() en lugar del constructor de la clase para inicializar las propiedades que vamos a utilizar, esto con el fin de optimizar los test que vallamos a realizar en nuestra aplicación, por ejemplo podemos declarar un objeto con sitios de interés como se muestra a continuación.-
 
 {% highlight javascript linenos %}
 import { Component, OnInit } from '@angular/core';
@@ -70,9 +80,9 @@ export class DemoComponent implements OnInit
 {
     sitiosInteres: any = [];
 
-   	constructor() { }
+    constructor() { }
 
-	  ngOnInit() {
+    ngOnInit() {
         this.sitiosInteres = [
             { name: 'Blog Codeando', url: 'http://blog.codeando.org' },
             { name: 'Github', url: 'https://github.com/codeandomx' },
@@ -88,8 +98,8 @@ export class DemoComponent implements OnInit
 Las propiedades y métodos que declaremos en la clase del componente los podemos utilizar en la plantilla del mismo, los cuales encontramos en los archivos "demo.component.html" que es la plantilla y "demo.component.css" que es donde colocamos los estilos del componente, un ejemplo de la plantilla puede ser el siguiente.-
 
 {% highlight html linenos %}
-<div *ngFor="let temp  of sitiosInteres">
-    <p><a href="{{temp.url}}">{{temp.name}}</a></p>
+<div *ngFor="let temp of sitiosInteres">
+    <p><a href="{ { temp.url } }">{ { temp.name } }</a></p>
 </div>
 {% endhighlight %}
 
@@ -124,9 +134,9 @@ import { DemoComponent } from './demo/demo.component';
 export class AppModule { }
 {% endhighlight %}
 
-En la linea 7 se importa nuestro componente y en la linea 12 declaramos el componente en la propiedad "declarations" para que de esta forma pueda estar disponible en el momento que lo vallamos utilizar.
+En la linea 7 importamos el componente y en la linea 12 lo incluimos en la propiedad "declarations" para que de esta forma pueda estar disponible en el momento en que lo vallamos utilizar.
 
-Si necesitas que el componente nuevo sea declarado en otro modulo, lo puedes indicar al momento de crearlo mediante el flag "--modulo" como se muestra a continuación.-
+Si necesitas que el componente nuevo sea declarado en otro modulo, lo puedes indicar al momento de crearlo mediante el flag "--module" como se muestra a continuación.-
 
 {% highlight javascript linenos %}
 $ ng generate component name_component --module path_module
@@ -144,8 +154,32 @@ Por ultimo solo nos queda utilizar nuestro componente en el proyecto, para ello 
 
 > El componente lo podemos utilizar dentro de templates de otros componentes (incluyendo el principal) o directamente en el "index.html".
 
+En nuestro caso lo vamos a incluir en la plantilla principal del proyecto (app.component.html) como se muestra a continuación.-
+
+{% highlight html linenos %}
+<h1>
+{ {  title  } }
+</h1>
+<app-code></app-code>
+{% endhighlight %}
+
+Iniciamos el servidor de angular.-
+
+{% highlight html linenos %}
+$ ng serve
+{% endhighlight %}
+
+Y visualizaremos lo siguiente en pantalla.-
+
+![Componentes angular](/img/component1.jpg)
+
 ## Conclusiones
 
-Acabos de aprender la forma más simple de crear componentes y registrarlos como parte de nuestra aplicación con Angular CLI, aunque también podemos crearnos manualmente, pero ya se los dejo a su elección.
+Acabamos de aprender la forma más simple de crear componentes y registrarlos como parte de nuestra aplicación con Angular CLI, aunque también podemos crearnos manualmente, pero ya se los dejo a su elección.
+
+Si te interesa el tema puedes continuar con los siguientes enlaces.-
+
+* Articulo anterior: [Arquitectura de componentes en Angular](http://blog.codeando.org/articulos/arquitectura-de-componentes-en-angular.html)
+* Curso: [Curso de Angular](https://github.com/Codeandomx/curso-de-introduccion-a-angular)
 
 Que tengan feliz código.

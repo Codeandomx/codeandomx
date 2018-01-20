@@ -9,6 +9,10 @@ tags: angular javascript
 
 En este articulo vamos a adentrarnos un poco mas a la temática de **Angular** conociendo su componente principal, si quieres seguir este articulo es necesario **crear un proyecto nuevo con angular** como lo hicimos en el articulo anterior (también puedes utilizar algún proyecto que ya tengas).
 
+<div class="redes-background">
+Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-introduccion-a-angular" target="_blank">Curso de Angular</a>.
+</div>
+
 ## Conociendo el componente principal
 
 En la estructura del proyecto de Angular podemos encontrar el componente principal dentro de la carpeta "app" como se puede observar en la siguiente imagen.-

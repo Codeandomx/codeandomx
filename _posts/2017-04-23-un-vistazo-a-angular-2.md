@@ -12,6 +12,10 @@ tags: angular javascript
 
 > A partir de Angular 2, los desarrolladores han decidido liberar una versión estable cada 6 meses, con cambios minimos, así que no te asustes si de pronto escuchar hablar de Angular 4, Angular 5, etc.
 
+<div class="redes-background">
+Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-introduccion-a-angular" target="_blank">Curso de Angular</a>.
+</div>
+
 ## Cambios destacados en Angular
 
 ### Programación con Javascript
