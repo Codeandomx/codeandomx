@@ -15,6 +15,16 @@ Si eres propietario de un blog también la **analítica es indispensable**, te a
 
 Google Analytics muestra todos los datos recopilados de nuestro sitio en informes, los cuales podremos analizar a fondo para entender el comportamiento de los clientes y su proceso de compra o de nuestros visitantes y sus intereses. En otras palabras es una **plataforma que recopila datos y los procesa en informes**.
  Analytics logra realizar este **seguimiento de forma anónima** añadiendo un código Javascript en cada una de las paginas de su sitio (debemos crearnos una cuenta y configurar un sitio), la recopilación de datos la realiza en periodos de tiempo a los que les llama **sesiones** y esta termina tras 30 minutos de inactividad.
+ 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Todos los datos recopilados son enviados a Google y este los presenta en forma de informes, además, pone a nuestra disposición herramientas como vistas y filtros para un seguimiento del sitio más exacto o con ciertas preferencias.
 
