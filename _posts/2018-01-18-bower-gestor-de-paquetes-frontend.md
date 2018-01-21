@@ -15,6 +15,16 @@ Ahora imaginen hacer todo lo anterior pero para todos nuestros proyectos, seria 
 
 Bower es un gestor de dependencias **creado por Twitter** al estilo de NPM para NodeJS, pero a diferencia de este, las dependencias están enfocadas al **desarrollo Frontend** como por ejemplo JQuery, Bootstrap, Materialize que se encuentran entre las mas populares, entonces, bower nos ayudara con la instalación, actualización de las mismas, algo asi como un administrador.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 > Una dependencia es una librería open source (distribuida por terceros) que utilizamos como complemento de desarrollo en nuestro proyecto.
 
 ## Instalación de bower

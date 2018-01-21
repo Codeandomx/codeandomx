@@ -19,6 +19,16 @@ Las template strings nos presentan una **mejora al momento de trabajar con caden
 - Formato de cadena.
 - Etiquetado de cadenas para el escape seguro de HTML.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 > Se considera un **DSL** cualquier lenguaje que esté especializado en modelar o **resolver un conjunto específico de problemas** (llamado dominio de aplicación), hay que destacar que la mayoría de **los lenguajes de programación no se consideran un DSL** ya que estos no están diseñados para resolver un conjunto específico de problemas, sino para resolver cualquier tipo de problema.
 
 Para **trabajar con template strings**, en lugar de iniciar las cadenas con comillas dobles, comenzamos con **comillas simples invertidas** (\` \`) en su lugar. Eso nos da un montón de posibilidades, los template strings podrían verse de esta forma.-

@@ -19,6 +19,16 @@ Los desarrolladores de JSX lo consideran como una **extensión de sintaxis Javas
 
 > JSX combina la vista con la lógica de la misma, para contrarrestar lo que para algunos es una mala practica, React utiliza **componentes** para encapsular esta parte del código.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Un ejemplo de uso de JSX es el siguiente.-
 
 {% highlight javascript linenos %}

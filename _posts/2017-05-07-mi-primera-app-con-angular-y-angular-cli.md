@@ -19,6 +19,16 @@ Para poder **trabajar con Angular** vamos a necesitar tener instalado [NodeJS](/
 
 > Te recomiendo trabajar con la **versión LTS**, la cual nos garantiza estabilidad y soporte a largo plazo.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Para comprobar si ya tenemos instalado NodeJS en nuestro sistema puedes ejecutar la siguiente instrucción en la terminal.-
 
 {% highlight javascript linenos %}

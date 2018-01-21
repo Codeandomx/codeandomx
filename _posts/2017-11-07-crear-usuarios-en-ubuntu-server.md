@@ -15,6 +15,16 @@ En este articulo aprenderemos a **crear un usuario en ubuntu server** (funciona 
 
 En entornos Linux el usuario root es el que tiene los más altos privilegios de administración del sistema, y por lo tanto puede realizar cualquier cambio, inclusive los cambios más drásticos del sistema, estos últimos normalmente se realizan por accidente.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Entonces lo recomendable es crear un usuario y utilizarlo para la administración del servidor y solo utilizar al usuario root cuando sea necesario.
 
 ## Crear usuario en ubuntu

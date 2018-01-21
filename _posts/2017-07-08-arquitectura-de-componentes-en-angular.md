@@ -37,6 +37,16 @@ export class AppComponent {
 }
 {% endhighlight %}
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Ahora vamos a analizar el código, en la linea 1 se importa "Component" del núcleo de angular, "Component" es un decorador que utiliza angular para poder marcar una clase como un componente de angular y de esta forma proporcionar metadatos adicionales que determinan cómo se debe procesar, instanciar y utilizar el componente en tiempo de ejecución de nuestra aplicación, puedes obtener mas información sobre el decorador Componente en la [documentación oficial de  Angular](https://angular.io/api/core/Component).
 
 > Un **componente en Angular** facilita la escritura de una aplicación de forma similar a la utilización de **Web Components** siendo este el nuevo estilo de arquitectura de aplicación de Angular.  Ventajas de los componentes:  Configuración más sencilla; Optimizado para la arquitectura basada en componentes.

@@ -22,6 +22,16 @@ Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-in
 
 Sin duda el cambio mas importante es el uso de las nuevas versiones de **Javascript**, me refiero a **[ECMAscript 6](/articulos/introduccion-a-es6-javascript.html)** y 7, donde se utilizan nuevas características del lenguaje como **programación orientada a objetos** entre otras cosas, esta actualización sin duda nos permite crear aplicaciones mas potentes y estables.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Pero hay un pequeño gran detalle, y es que Javascript no deja de ser un **lenguaje dinámico y con un tipado débil** (si es que se le puede considerar de esta forma), pero para solucionar esta deficiencia, los desarrolladores de Angular apoyan el uso de **Typescript** (framework Javascript desarrollado por Microsoft), el cual nos permitirá tener una construcción de la app con un  **lenguaje bastante estricto  y con un tipado fuerte**,  es decir tendremos mucho control sobre como se debe desarrollar con Angular sobretodo si en el proyecto trabajan dos o más desarrolladores.
 
 El desarrollo con Typescript es opcional, ya que si lo deseas **puedes utilizar ES6 y ES7 directamente**, pero, te recomiendo que lo utilices por que la comunidad de angular (en su mayoría) mostrara ejemplos basados en Typescript y sera más facil incrementar tu curva de aprendizaje.

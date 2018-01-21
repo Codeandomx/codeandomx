@@ -24,6 +24,16 @@ num.map(function (data){
 });
 {% endhighlight %}
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 > El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos [más información](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map).
 
 Hablemos un poco sobre el funcionamiento del **método map()**, recibe como parámetro una función anónima (o también conocida como callback), la cual a su vez esta función toma como parámetro cada uno de los elementos del array y se procesa su contenido, que en este caso multiplicamos cada elemento por 2.

@@ -15,6 +15,16 @@ Entonces en una conclusión rápida, al utilizar React en nuestro proyecto somos
 
 React es una librería Javascript que nos ayuda con el renderizado (vista) de nuestra aplicación, fue desarrollada por Facebook quien después libero su código como un proyecto opensource, actualmente es utilizada en producción por grandes empresas como Netflix, Spotify, Github sin olvidarnos del propio Facebook,  entonces si es utilizada por estas empresas realmente es una garantía el poder utilizarla.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Si tomamos como referencia el modelo MVC, React viene siendo solo la parte de la V, su curva de aprendizaje es muy rápida y cómoda, pero se dará cuenta que al dominar esta librería aun se sentirá no apto para desarrollar una aplicación competente ya que aun le faltara dominar la M y C de este modelo (MVC), pero no se preocupe, ya que React se utiliza en conjunto con otras tecnologías como JSX, Gulp para la automatización de tareas como el que realizamos con Babel transformando el código JSX a Javascript, utilizamos algunas funcionalidades de [ECMASctipt 6](/articulos/introduccion-a-es6-javascript.html) y Browserify para unir todos los componentes, espero no se me escape alguna otra.
 
 > JSX es como una combinación de HTML y XML, algo así como un HTML mejorado, este código es embebido en Javascript (algo que va contra las buenas practicas pero realmente terminaras utilizándolo), ya lo veremos más adelante a profundidad para no confundirlos en este momento.

@@ -15,6 +15,16 @@ El desarrollo de [aplicaciones web con react](/articulos/introduccion-a-react-cr
 
 Cabe mencionar que el desarrollo en **Rect esta basado en componentes** (es el corazón de React), pongamos como ejemplo un chat, nuestro componente principal sera todos los elementos de un chat y dentro de este podemos tener varios componentes, un componente para escribir el mensaje, otro componente para colocar los mensajes enviados, los botones de acción pueden ser otro componente y de esta forma reutilizarlo para tener mas de un botón.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 En la siguiente imagen podemos ver el chat seccionado en componentes, cada rectángulo hace referencia a un componente.-
 
 ![Ejemplo de componentes con react](/img/chat.jpg)
@@ -265,6 +275,7 @@ Te invito a visitar nuestro repositorio en github para acceder a el código vist
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
 * Articulo anterior: [Introducción a JSX](/articulos/introduccion-a-jsx.html)
+* Articulo siguiente: [Entendiendo el virtual DOM con React](/articulos/entendiendo-el-virtual-dom-en-react.html)
 * Curso: [Curso de React](https://github.com/Codeandomx/curso-de-introduccion-a-react)
 
 Que tengan feliz código!

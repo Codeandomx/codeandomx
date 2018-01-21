@@ -34,6 +34,16 @@ Class Person {
 };
 {% endhighlight %}
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 En el ejemplo anterior, tenemos una clase llamada "Person", para declararla se utiliza la **palabra reservada "class"** (linea 2),  si programas orientado a objetos en otros lenguajes estarás acostumbrado a declarar primero las propiedades y después inicializarlas por medio del constructor de la clase, en Javascript cambia un poco la sintaxis, ya que al ser un lenguaje dinámico, **la declaración e inicialización de las propiedades se hace desde el constructor** mediante la variable this.
 
 > Una aclaración sobre el **constructor de la clase** es que para declararlo no es necesario utilizar el mismo nombre de la clase (como seguramente estarás acostumbrado), si no que con ES6 se utiliza la palabra reservada "constructor".

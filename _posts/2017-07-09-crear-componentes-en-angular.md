@@ -2,7 +2,7 @@
 title: Crear componentes en Angular
 author: Paulo Andrade
 categories: angular2
-tags: angular javascript
+tags: angular javascript es6
 ---
 
 ![Angular](/img/angular2.jpg)
@@ -23,20 +23,30 @@ $ ng generate component name_component
 
 > Recuerda que ng es el comando principal para utilizar **Angular CLI**, puedes obtener más información sobre este comando si ejecutas en la terminal "ng help".
 
-Antes de ejecutar el comando anterior solo hay que cambiar "name_component" por el nombre que le queremos dar a nuestro componente, por ejemplo podemos crear el componente "demo" utilizamos el siguiente comando.-
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+Antes de ejecutar el comando anterior solo hay que cambiar "name_component" por el nombre que le queremos dar a nuestro componente, por ejemplo podemos crear el componente "home" utilizamos el siguiente comando.-
 
 {% highlight javascript linenos %}
-$ ng generate component components/demo
+$ ng generate component components/home
 {% endhighlight %}
 
 Nuestro componente se creara dentro del directorio components, esto lo hacemos con la finalidad de modularizar aun más nuestra aplicación, si todo marcha bien se nos mostrara en la terminal lo siguiente.-
 
 {% highlight javascript linenos %}
 installing component
-    create src/app/components/demo/demo.component.css
-    create src/app/components/demo/demo.component.html
-    create src/app/components/demo/demo.component.spec.ts
-    create src/app/components/demo/demo.component.ts
+    create src/app/components/home/home.component.css
+    create src/app/components/home/home.component.html
+    create src/app/components/home/home.component.spec.ts
+    create src/app/components/home/home.component.ts
     update src/app/app.module.ts
 {% endhighlight %}
 
@@ -44,18 +54,18 @@ Si leiste el articulo sobre [arquitectura de componentes en Angular](/articulos/
 
 ## Analizando el componente creado
 
-Lo primero en tomar a cuenta es que nuestro componente se genero dentro de un directorio nuevo (con el nombre que le dimos al componente), esto para tener un mejor control sobre su **estructura de archivos**, la parte lógica la encontramos en el archivo "demo.component.ts" que vemos a continuación.-
+Lo primero en tomar a cuenta es que nuestro componente se genero dentro de un directorio nuevo (con el nombre que le dimos al componente), esto para tener un mejor control sobre su **estructura de archivos**, la parte lógica la encontramos en el archivo "home.component.ts" que vemos a continuación.-
 
 {% highlight javascript linenos %}
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-demo',
-    templateUrl: './demo.component.html',
-    styleUrls: ['./demo.component.css'],
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
 })
 
-export class DemoComponent implements OnInit
+export class HomeComponent implements OnInit
 {
     constructor() { }
 
@@ -71,12 +81,12 @@ La funcionalidad de este método es la misma que el constructor de la clase del 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-demo',
-    templateUrl: './demo.component.html',
-    styleUrls: ['./demo.component.css'],
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
 })
 
-export class DemoComponent implements OnInit
+export class HomeComponent implements OnInit
 {
     sitiosInteres: any = [];
 
@@ -95,7 +105,7 @@ export class DemoComponent implements OnInit
 
 > Para programar la aplicación de Angular debemos utilizar Typescript, aunque no es obligatorio, les recomiendo que lo utilicen, de esta forma facilitaremos tanto programar cada pate de nuestra aplicación y el trabajo pesado se lo dejaremos a la compilación (transpilación) automática de de Angular.
 
-Las propiedades y métodos que declaremos en la clase del componente los podemos utilizar en la plantilla del mismo, los cuales encontramos en los archivos "demo.component.html" que es la plantilla y "demo.component.css" que es donde colocamos los estilos del componente, un ejemplo de la plantilla puede ser el siguiente.-
+Las propiedades y métodos que declaremos en la clase del componente los podemos utilizar en la plantilla del mismo, los cuales encontramos en los archivos "home.component.html" que es la plantilla y "home.component.css" que es donde colocamos los estilos del componente, un ejemplo de la plantilla puede ser el siguiente.-
 
 {% highlight html linenos %}
 <div *ngFor="let temp of sitiosInteres">
@@ -116,12 +126,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { DemoComponent } from './demo/demo.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        DemoComponent
+        HomeComponent
     ],
     imports: [
         BrowserModule,
@@ -142,14 +152,14 @@ Si necesitas que el componente nuevo sea declarado en otro modulo, lo puedes ind
 $ ng generate component name_component --module path_module
 {% endhighlight %}
 
-> Solo hay que cambiar el nombre del componente y el path_module es la ubicacion relativa del modulo, por ejemplo.- "modules/demo.module".
+> Solo hay que cambiar el nombre del componente y el path_module es la ubicacion relativa del modulo, por ejemplo.- "modules/home.module".
 
 ## Utilizar el componente
 
-Por ultimo solo nos queda utilizar nuestro componente en el proyecto, para ello solo necesitamos utilizar el elemento que declaramos "app-demo".-
+Por ultimo solo nos queda utilizar nuestro componente en el proyecto, para ello solo necesitamos utilizar el elemento que declaramos "app-home".-
 
 {% highlight html linenos %}
-<app-code></app-code>
+<app-home></app-home>
 {% endhighlight %}
 
 > El componente lo podemos utilizar dentro de templates de otros componentes (incluyendo el principal) o directamente en el "index.html".
@@ -160,7 +170,7 @@ En nuestro caso lo vamos a incluir en la plantilla principal del proyecto (app.c
 <h1>
 { {  title  } }
 </h1>
-<app-code></app-code>
+<app-home></app-home>
 {% endhighlight %}
 
 Iniciamos el servidor de angular.-
@@ -180,6 +190,7 @@ Acabamos de aprender la forma más simple de crear componentes y registrarlos co
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
 * Articulo anterior: [Arquitectura de componentes en Angular](http://blog.codeando.org/articulos/arquitectura-de-componentes-en-angular.html)
+* Articulo siguiente: [Plantillas y estillos CSS en Angular](http://blog.codeando.org/articulos/plantillas-y-estilos-css-con-angular.html)
 * Curso: [Curso de Angular](https://github.com/Codeandomx/curso-de-introduccion-a-angular)
 
 Que tengan feliz código.

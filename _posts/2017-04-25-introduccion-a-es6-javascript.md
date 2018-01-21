@@ -13,6 +13,16 @@ tags: javascript es6
 
 Es una realidad que Javascript se ha establecido como uno de los **lenguajes de programación más utilizados** a nivel mundial, pero tardo bastante tiempo en evolucionar ya que durante años trabajamos con la versión 5 hasta hace un par de años en los que se decidió acelerar su crecimiento, a tal grado de poder **utilizar Javascript tanto en el frontend (lado cliente) y backend (lado servidor)** con tecnologías como [Angular](https://angular.io), [NodeJS](https://nodejs.org), [MongoDB](https://mongodb.com/es) y [ExpresJS](https://expressjs.com/es/) entre muchos más (mejor conocido como MEAN).
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Novedades de ES6
 
 ### Sintaxis

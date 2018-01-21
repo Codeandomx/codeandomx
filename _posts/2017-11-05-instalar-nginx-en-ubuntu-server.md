@@ -15,6 +15,16 @@ Con este articulo damos inicio a una serie de tutoriales que nos ayudaran a conf
 
 NGINX es un **servidor HTTP de alto rendimiento**, libre y de **código abierto**, así como un servidor proxy IMAP/POP3. además, es conocido por su alto rendimiento, estabilidad, amplio conjunto de funciones, configuración simple y lo más importante es su **bajo consumo de recursos**.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 A diferencia de los servidores tradicionales, NGINX no depende de los hilos para manejar las solicitudes (como normalmente lo hace Apache). En su lugar, utiliza una **arquitectura mucho más escalable impulsada por eventos** (asíncrona). Esta arquitectura **usa pequeñas cantidades de memoria** resaltando su gran rendimiento.
 
 NGINX le puede servir desde el VPS más pequeño (con pocos recursos) hasta los grandes grupos de servidores normalmente usados en empresas.

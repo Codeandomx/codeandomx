@@ -15,6 +15,16 @@ tags: nodejs javascript es6
 
 **NodeJS es un entorno de programación Javascript** con el cual podemos trabajar en el desarrollo de nuestra aplicación BackEnd, esta basado en el [motor V8 de Google Chrome](https://es.wikipedia.org/wiki/V8_(motor_JavaScript)), **usa un modelo de eventos** mejor conocido como programación orientada a eventos no bloqueante (o dicho de otra forma asíncrono) de entrada y salida (I/O) dando como resultado un servidor muy ligero y eficiente.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Además tiene mediante NPM (Node Package Manager) el más grande ecosistema de librerías en el mundo que nos proporciona todo un mundo de posibilidades para desarrollar nuestros proyectos (la comunidad de nodejs es la más grande del mundo, duplicando las librerías proporcionadas por la comunidad de Java, su más cercano competidor).
 
 ### El motor V8

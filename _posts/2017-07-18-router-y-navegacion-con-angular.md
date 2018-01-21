@@ -19,6 +19,16 @@ En un articulo anterior aprendimos a [crear una aplicación con Angular CLI](/ar
 $ ng new app_name --routing true
 {% endhighlight %}
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 La única diferencia es que en el root de la aplicación se nos crea un nuevo archivo con el nombre "app-routing.module.ts", este archivo nos va servir para gestionar las rutas de su modulo asociado, veamos el contenido del archivo.-
 
 {% highlight javascript linenos %}

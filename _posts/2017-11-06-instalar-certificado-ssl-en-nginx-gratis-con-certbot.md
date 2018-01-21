@@ -23,6 +23,16 @@ Los certificados SSL son pequeños archivos de datos que vinculan digitalmente u
 
 Normalmente, **SSL** se utiliza para proteger las transacciones con tarjeta de crédito, la transferencia de datos y los inicios de sesión, y más recientemente se está convirtiendo en la norma cuando se asegura la navegación de los sitios de redes sociales.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Nosotros utilizaremos Certbot como proveedor de nuestros certificados SSL, puedes consultar más información sobre Certbot en su [página oficial](https://certbot.eff.org/).
 
 ![Certificados ssl certbot](/img/certbot.jpg)

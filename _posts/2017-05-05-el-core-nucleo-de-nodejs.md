@@ -13,6 +13,16 @@ En la [introducción a NodeJS](/articulos/introduccion-a-nodejs.html) vimos las 
 
 El núcleo de NodeJS esta **compuesto por 37 módulos** los cuales tenemos a nuestra disposición desde que lo instalamos en nuestro ordenador, además de estos módulos contamos con un sin fin de **dependencias externas soportadas por la gran comunidad de NodeJS** mediante su gestor de paquetes (NPM), de esta forma tendremos un sin fin de posibilidades al crear nuestras aplicaciones.
 
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-0593566584451788"
+     data-ad-slot="1426664336"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Retomando el tema de los módulos los cuales podremos encontrar en la [documentación oficial](https://nodejs.org) toda la información referente a estos, debemos tener en cuenta un factor muy importante y se trata sobre **el nivel de estabilidad** de cada uno de estos módulos, veamos la siguiente imagen.-
 
 ![estabilidad modulos nodejs](/img/estabilidad_nodejs.jpg)
