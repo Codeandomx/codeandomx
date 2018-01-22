@@ -8,7 +8,7 @@ tags: angular javascript es6
 En este articulo aprenderemos a trabajar con plantillas (templates) y estilos CSS para nuestros componentes, Angular nos proporciona un poderoso sistema de plantillas basado en HTML que nos permite comunicarnos ya sea de la plantilla al componente o viceversa (este ultimo lo veremos en el siguiente articulo), además, Angular nos permite trabajar con preprocesadores de CSS como [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), [Sass](http://sass-lang.com/) y [Stylus](http://stylus-lang.com/), aunque nosotros vamos a trabajar con CSS en este articulo (sin preprocesador).
 
 <div class="redes-background">
-Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-introduccion-a-angular" target="_blank">Curso de Angular</a>, puedes acceder al código de ejemplo de este articulo desde el repositorio de [Github](https://github.com/Codeandomx/curso-de-introduccion-a-angular/tree/02_plantillas_y_estilos_css).
+Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-introduccion-a-angular" target="_blank">Curso de Angular</a>, puedes acceder al código de ejemplo de este articulo desde el repositorio de <a href="https://github.com/Codeandomx/curso-de-introduccion-a-angular/tree/02_plantillas_y_estilos_css" target="_blank">Github</a>.
 </div>
 
 ## Plantillas
