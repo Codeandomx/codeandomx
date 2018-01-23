@@ -2,6 +2,8 @@
  * Emerald is a simple blog theme built for Jekyll.
  */
 
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
 /*- Base reset -*/
 
 * {
@@ -14,7 +16,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Lato';
+  font-family: 'Oxygen';
 }
 
 /*- Base color -*/

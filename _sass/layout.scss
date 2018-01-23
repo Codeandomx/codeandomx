@@ -190,16 +190,18 @@
 }
 
 #header {
+  background-color: #3a264f;
 	text-align: center;
-  padding: 24px 0;
+  padding: 10px 0;
   position: relative;
+  margin-bottom: 15px;
   a {
   	text-decoration: none;
-  	color: $text-color;
+  	color: #fcfcfc;
   	display: inline-block;
   }
   img {
-  	max-height: 72px;
+  	max-height: 50px;
   	margin: 0 auto;
   	display: inline-block;
     vertical-align: middle;
@@ -210,25 +212,17 @@
   	font-family: 'Lato','Signika', sans-serif; //Emerald logo font
     font-weight: 600;
     vertical-align: middle;
-    color: #176DEE;
+    color: #fcfcfc;
   }
   h2 {
     display: inline-block;
     font-family: 'Lato', 'Signika', sans-serif; //Emerald logo font
     font-weight: 600;
     vertical-align: middle;
-    color: #176DEE;
+    color: #fcfcfc;
     font-size: 2.25em;
     line-height: 1.3333em;
     padding: 0.33335em 0;
-  }
-  &:after {
-  	display: block;
-    content: '';
-    width: 5rem;
-    height: 1px;
-    margin: 23px auto;
-    background-color: lighten($text-color, 70%);
   }
 }
 
