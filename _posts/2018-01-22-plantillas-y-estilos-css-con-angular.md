@@ -5,6 +5,8 @@ categories: angular2
 tags: angular javascript es6
 ---
 
+![templates y estilos css Angular](http://blog.codeando.org/img/angular2.jpg)
+
 En este articulo aprenderemos a trabajar con plantillas (templates) y estilos CSS para nuestros componentes, Angular nos proporciona un poderoso sistema de plantillas basado en HTML que nos permite comunicarnos ya sea de la plantilla al componente o viceversa (este ultimo lo veremos en el siguiente articulo), además, Angular nos permite trabajar con preprocesadores de CSS como [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), [Sass](http://sass-lang.com/) y [Stylus](http://stylus-lang.com/), aunque nosotros vamos a trabajar con CSS en este articulo (sin preprocesador).
 
 <div class="redes-background">
