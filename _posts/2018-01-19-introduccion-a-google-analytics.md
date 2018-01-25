@@ -90,4 +90,8 @@ Google Analytics le permitirá configurar los siguientes permisos permisos.-
 
 Abarcamos los conceptos básicos que necesitamos para comenzar a trabajar con Analytics, si se me escapa alguno ya lo veremos en el transcurso del curso de Google Analytics, empieza ahora mismo en este fascinante mundo de la analítica online.
 
+Si te interesa el tema puedes continuar con los siguientes enlaces.-
+
+* Articulo siguiente: [Configuración de las vistas en Google Analytics](/articulos/configuracion-de-las-vistas-en-google-analytics.html).
+
 Que tengan feliz código.
