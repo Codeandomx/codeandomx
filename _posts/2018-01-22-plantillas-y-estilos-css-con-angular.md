@@ -156,7 +156,7 @@ La propiedad que ahora nos interesa esta en la linea 6 "styleUrl", en esta propi
 
 Pero al igual que las plantillas, lo mejor es declarar el código CSS en el archivo .css del componente, en este caso "home.component.css", lo abrimos y ponemos el siguiente código en el.-
 
-{% highlight javascript linenos %}
+{% highlight css linenos %}
 container {
     display: grid;
     grid-template-columns: 50% auto;
@@ -202,7 +202,7 @@ container {
 
 Estos estilos solo afectaran al componente "home", así que no afectaran el estilo del titulo ya que este se encuentra declarado en el componente principal (app.component.ts) de la aplicación, para ello abrimos el archivo "app.component.css" y agregamos el siguiente código.-
 
-{% highlight javascript linenos %}
+{% highlight css linenos %}
 h1 {
     color: #fcfcfc;
 }
@@ -210,7 +210,7 @@ h1 {
 
 También debemos crear algunos estilos globales para nuestra aplicación, para esto, angular ponen a disposición el archivo "styles.css" ubicado en el directorio "src", lo abrimos y agregamos el siguiente código.-
 
-{% highlight javascript linenos %}
+{% highlight css linenos %}
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
@@ -256,6 +256,7 @@ Puedes encontrar el código de ejemplo de este articulo en.-
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
 * Articulo anterior: [Crear componentes en Angular](http://blog.codeando.org/articulos/crear-componentes-en-angular.html)
+* Articulo siguiente: [interpolacion, property y event binding en Angular](http://blog.codeando.org/articulos/interpolacion-property-y-event-binding-con-angular.html)
 * Curso: [Curso de Angular](https://github.com/Codeandomx/curso-de-introduccion-a-angular)
 
 Que tengan feliz código.
