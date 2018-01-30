@@ -11,7 +11,9 @@ Uno de los temas que más intereso con la llegada de **Angular** es el router, y
 
 > Recuerda que para referirnos a la nueva versión de Angular 2+ (Angular 5.X.X) solo decimos Angular, mientras que para la versión 1.X.X lo hacemos como AngularJS.
 
-Puedes acceder al [curso gratuito de Angular](github.com/codeandomx/curso-de-introduccion-a-angular) para aprender más sobre este framework, también, puedes acceder a nuestro [repositorio de Github](https://github.com/Codeandomx/development-angular-app-router) para obtener el código directamente.
+<div class="redes-background">
+Puedes acceder al [curso gratuito de Angular](github.com/codeandomx/curso-de-introduccion-a-angular) para aprender más sobre este framework, también, puedes acceder a nuestro [repositorio de Github](https://github.com/Codeandomx/development-angular-app-router) para obtener el código de ejemplo de este articulo.
+</div>
 
 ## Crear aplicación con router
 
@@ -221,7 +223,7 @@ $ ng generate component components/pageNotFound --module app-routing.module
 Una ves creado podemos agregar el componente al router principal.-
 
 {% highlight javascript linenos %}
-mport { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { PageNotFoundComponent } import './componentes/pageNotFound/pageNotFound.component';
