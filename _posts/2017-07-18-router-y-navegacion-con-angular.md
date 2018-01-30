@@ -12,7 +12,7 @@ Uno de los temas que más intereso con la llegada de **Angular** es el router, y
 > Recuerda que para referirnos a la nueva versión de Angular 2+ (Angular 5.X.X) solo decimos Angular, mientras que para la versión 1.X.X lo hacemos como AngularJS.
 
 <div class="redes-background">
-Puedes acceder al [curso gratuito de Angular](github.com/codeandomx/curso-de-introduccion-a-angular) para aprender más sobre este framework, también, puedes acceder a nuestro [repositorio de Github](https://github.com/Codeandomx/development-angular-app-router) para obtener el código de ejemplo de este articulo.
+Puedes acceder al <a href="http://github.com/codeandomx/curso-de-introduccion-a-angular" target="_blank">curso gratuito de Angular</a> para aprender más sobre este framework, también, puedes acceder a nuestro <a href="https://github.com/Codeandomx/development-angular-app-router" target="_blank">repositorio de Github</a> para obtener el código de ejemplo de este articulo.
 </div>
 
 ## Crear aplicación con router
