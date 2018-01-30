@@ -7,9 +7,11 @@ tags: angular javascipt
 
 ![Router Angular](/img/angular2.jpg)
 
-Uno de los temas que más intereso con la llegada de **Angular** es el router, ya que en AngularJS se necesitaban dependencias de terceros para poder **proveer a nuestra aplicación de un router robusto y potente** pero sobre todo funcional, ya que el router que tenia por defecto AngularJS no era suficiente para nuestros objetivos, afortunadamente el Core de Angular cuenta con un nuevo sistema de ruteo con el cual aprenderemos a trabajar en este articulo.
+Uno de los temas que más intereso con la llegada de **Angular** es el router, ya que en AngularJS se necesitaban dependencias de terceros para poder **proveer a nuestra aplicación de un router robusto y potente**, pero sobre todo funcional, ya que el router que trae por defecto AngularJS no era suficiente para nuestros objetivos, afortunadamente Angular cuenta con un nuevo sistema de ruteo con el cual aprenderemos a trabajar en este articulo.
 
-> Recuerda que para referirnos a la nueva versión de Angular 2+ (Angular 4.X.X) solo decimos Angular, mientras que para la versión 1.X.X lo hacemos como AngularJS.
+> Recuerda que para referirnos a la nueva versión de Angular 2+ (Angular 5.X.X) solo decimos Angular, mientras que para la versión 1.X.X lo hacemos como AngularJS.
+
+Puedes acceder al [curso gratuito de Angular](github.com/codeandomx/curso-de-introduccion-a-angular) para aprender más sobre este framework, también, puedes acceder a nuestro [repositorio de Github](https://github.com/Codeandomx/development-angular-app-router) para obtener el código directamente.
 
 ## Crear aplicación con router
 
@@ -29,10 +31,10 @@ $ ng new app_name --routing true
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-La única diferencia es que en el root de la aplicación se nos crea un nuevo archivo con el nombre "app-routing.module.ts", este archivo nos va servir para gestionar las rutas de su modulo asociado, veamos el contenido del archivo.-
+La única diferencia es que se crea un nuevo archivo con el nombre "app-routing.module.ts", este archivo nos va servir para gestionar las rutas del modulo asociado, veamos el contenido del archivo.-
 
 {% highlight javascript linenos %}
-mport { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
@@ -87,27 +89,27 @@ El código del modulo principal es el mismo que si lo hubiéramos creado sin el 
 
 ## Configurando la ruta principal
 
-Comentaba la **buena practica** de que cada ruta principal de nuestra aplicación debe tener su propio modulo y router, y para la ruta principal no es la excepción, así que vamos a necesitar crear un nuevo modulo con router y un componente para esta ruta, así que procedemos a crear el modulo y router.-
+Cada ruta principal de nuestra aplicación debe tener su propio modulo y router, y para la ruta "/" no es la excepción, así que vamos a necesitar crear un nuevo modulo con router y un componente para esta ruta a la que llamaremos inicio, creamos primero el modulo.-
 
 {% highlight javascript linenos %}
 $ ng generate module modules/inicio --routing true
 {% endhighlight %}
 
-Y creamos el componente también.-
+Ahora creamos el componente también.-
 
 {% highlight javascript linenos %}
-$ ng generate component components/inicio --module modules/inicio/inicio-routing
+$ ng generate component components/inicio --module modules/inicio/inicio-routing.module
 {% endhighlight %}
 
-Una ves terminado de crearse, tendremos una estructura de archivo en nuestro proyecto como la siguiente.-
+Una ves terminado el proceso, tendremos una estructura de archivos en nuestro proyecto como la siguiente.-
 
 ![Estructura proyecto Angular](/img/estructura_router.jpg)
 
-En resumen se creo un directorio "modules" donde vamos a crear todos los módulos para nuestro proyecto y también se creo el directorio "components" donde vamos a crear todos los componentes de nuestro proyecto, y dentro de estos directorios ya tenemos el modulo y componente que necesitamos (llamado "inicio").
+En resumen se creo un directorio "modules" donde vamos a crear todos los módulos para nuestro proyecto y también se creo el directorio "components" donde vamos a crear todos los componentes para nuestro proyecto, y dentro de estos directorios ya tenemos el modulo y componente que necesitamos (llamado "inicio").
 
-> Al crear el componente "inicio" se utilizo el flag "--module" y seguido de este utilizamos la ruta donde se creo el router del modulo "inicio", el fin de utilizarlo de esta forma, es que al crear el componente automáticamente se importara al modulo indicado, ya que lo necesitaremos mas adelante.
+> Al crear el componente "inicio" se utilizo el flag "--module" y seguido de este utilizamos la ruta donde se creo el router del modulo "inicio", el fin de utilizarlo de esta forma, es que al crear el componente automáticamente se importara al modulo indicado, de esta forma, nos evitamos hacerlo manualmente.
 
-En el archivo "inicio-routing.module.ts" vamos a **configurar la ruta principal** y quedaria de la siguiente forma.-
+En el archivo "inicio-routing.module.ts" vamos a **configurar la ruta principal** y quedará de la siguiente forma.-
 
 {% highlight javascript linenos %}
 import { NgModule } from '@angular/core';
@@ -119,46 +121,40 @@ const routes: Routes = [
     { path: '', component: InicioComponent },
 ];
 
-export const routeablesComponents = [
-    MainComponent
-];
-
 @NgModule({
     imports: [RouterModule.forChild(routes)], // Modulo funcional
     exports: [RouterModule] // Listo para exportar
+    declarations: [InicioComponent]
 })
 
 export class InicioRoutingModule { }
 {% endhighlight %}
 
-En la constante "routes" configuramos la ruta principal del proyecto mediante la propiedad "path", mientras que con la propiedad "component" le indicamos que componente debe mostrar al ingresar a esa ruta.
+Les explico, en la constante "routes" configuramos la ruta principal del proyecto mediante la propiedad "path", mientras que con la propiedad "component" le indicamos que componente debe mostrar al ingresar a esa ruta.
 
-> Para **configurar las rutas en Angular** no es necesario utilizar "/" al inicio.
+> Para **configurar las rutas en Angular** no es necesario utilizar "/" al inicio de la misma.
 
-Por otra parte creamos una constante a la que llamamos routeablesComponents en la que vamos a colocar todos los componentes que utilizamos, esta constante la vamos a exportar para poder tener acceso a esta desde nuestro modulo "inicio", de esta forma tendremos acceso a los componentes desde el modulo sin necesidad de volverlos a importar.
+Por otra parte para tener acceso a los componentes desde el modulo sin necesidad de volverlos a importar los agregamos a la propiedad "declarations".
 
-Ahora veamos como quedara nuestro "inicio.module.ts".-
+Ahora veamos como quedará nuestro "inicio.module.ts".-
 
 {% highlight javascript linenos %}
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { InicioRoutingModule, enruteableComponents } from './inicio-routing.module';
+import { InicioRoutingModule } from './inicio-routing.module';
 
 @NgModule({
     imports: [
         CommonModule,
-        AdminRoutingModule
-    ],
-    declarations: [
-        enruteableComponents
+        InicioRoutingModule
     ]
 })
 
 export class AdminModule { }
 {% endhighlight %}
 
-Veamos que en la linea 4 importamos desde el modulo "inicio-routing.module.ts" el router y la constante "enruteableComponents" la cual en la linea 12 declaramos en nuestro modulo "Inicio", bien, aun no terminamos de configurar la nueva ruta nos falta un par de pasos, ahora modifiquemos el modulo principal de esta forma.-
+Veamos que en la linea 4 importamos desde el modulo "inicio-routing.module.ts" el router la cual en la linea 8 la declaramos en la propiedad "imports" para tener acceso al router, bien, aun no terminamos de configurar la nueva ruta nos falta un par de pasos, ahora modifiquemos el modulo principal "app.module.ts" de esta forma.-
 
 {% highlight javascript linenos %}
 import { BrowserModule } from '@angular/platform-browser';
@@ -193,7 +189,7 @@ Lo único que hacemos es importar el modulo "inicio" y agregarlo en la propiedad
 
 ## Navegación de la aplicación
 
-Para terminar de configurar nuestro router vamos a modificar el template del componente principal (app.component.ts) de la siguiente forma.-
+Para terminar de configurar nuestro router vamos a modificar el template del componente principal (app.component.html) de la siguiente forma.-
 
 {% highlight html linenos %}
 <nav>
@@ -214,12 +210,12 @@ Por ultimo vemos que tenemos un menú de navegación con dos enlaces, note que e
 
 ## Y que pasa con el router principal?
 
-Hasta el momento ya tenemos armado nuestro router, pero no le dimos ninguna funcionalidad a nuestro router principal, esto lo hacemos con un fin, tener mejor control al separar nuestra aplicación en partes, esto mejorar el tiempo de mantenimiento de la misma.
+Hasta el momento ya tenemos funcionando nuestro router para el modulo inicio, pero aun no le damos ninguna funcionalidad a nuestro router principal "app-routing.module.ts", esto lo hacemos con un fin, tener mejor control al separar nuestra aplicación en partes, esto mejora el tiempo de mantenimiento de la misma.
 
-La funcionalidad que le podemos dar a este router es configurar el componente que se mostrara cuando el usuario ingrese a una ruta no registrada (el típico error 404  pagina no encontrada), entonces podemos crear este componente.-
+La funcionalidad que le podemos dar a este router es configurar el componente que se mostrara cuando el usuario ingrese a una ruta no registrada (el típico error 404  pagina no encontrada), entonces vamos crear este componente.-
 
 {% highlight html linenos %}
-$ ng generate componente components/pageNotFound --module app-routing.component
+$ ng generate component components/pageNotFound --module app-routing.module
 {% endhighlight %}
 
 Una ves creado podemos agregar el componente al router principal.-
@@ -236,19 +232,18 @@ const routes: Routes = [
     }
 ];
 
-export const enruteableComponent = [
-    PageNotFoundComponent
-];
-
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    exports: [RouterModule],
+    declarations: [PageNotFoundComponent]
 })
 
 export class AppRoutingModule { }
 {% endhighlight %}
 
-En la linea 8 configuramos la ruta, en este caso mediante los dos asteriscos le indicamos que si entra en cualquier ruta no registrada nos muestre el componente "PageNotFoundComponent" y en la linea 12-14 exportamos el componente, ya solo agregamos la constante "enruteableComponents" al modulo principal.-
+En la linea 8 configuramos la ruta, en este caso mediante los dos asteriscos le indicamos que si entra en cualquier ruta no registrada nos muestre el componente "PageNotFoundComponent" y en la linea 15 agregamos el componente a la propiedad "declaratios" para poderlo utilizar.
+
+Ahora nos aseguramos que el "AppRoutingModule" en el componente principal este importado al final de todos los modulos, como se muestra a continuación.-
 
 {% highlight javascript linenos %}
 import { BrowserModule } from '@angular/platform-browser';
@@ -256,10 +251,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppRoutingModule, enrouteableComponents } from './app-routing.module';
-import { InicioModule } from './modules/inicio/inicio.module';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InicioModule } from './modules/inicio/inicio.module';
 
 @NgModule({
     declarations: [
@@ -269,131 +263,175 @@ import { AppComponent } from './app.component';
         BrowserModule,
         FormsModule,
         HttpModule,
-        AppRoutingModule,
-				InicioModule,
-        enrouteableComponents
+        InicioModule,
+        AppRoutingModule
     ],
     providers: [],
     bootstrap: [AppComponent]
 })
-
 export class AppModule { }
 {% endhighlight %}
-
-Lo único que hicimos fue importar la constante en la linea 6 y agregarla en la propiedad "imports" del modulo (linea 21), con esto terminamos de **configurar nuestro router**.
 
 ## Crear rutas hijas (subrutas)
 
 El router que creamos hasta el momento no es nada más que un router muy simple, pero si queremos agregarle complejidad lo ideal es que nuestras rutas padres tuvieran rutas hijas y estas a su ves **trabajaran con parámetros**, veamos como hacerlo.
 
-Un ejemplo ideal para el trabajo con rutas hijas es un sistema de administración donde "admin" es la ruta principal y por ejemplo "nuevo", "mostrar", "editar" sean rutas hijas, entonces, para asignar rutas hijas a una ruta padre utilizamos la propiedad "children".-
+Un ejemplo ideal para el trabajo con rutas hijas, es un sistema de administración donde "admin" es la ruta principal y por ejemplo "nuevo", "mostrar", "editar" sean rutas hijas, entonces, para asignar rutas hijas a una ruta padre utilizamos la propiedad "children".
+
+Creamos un modulo nuevo para el sistema de administración con su propio sistema de router.-
 
 {% highlight javascript linenos %}
-mport { NgModule } from '@angular/core';
+ng generate module modules/admin --routing true
+{% endhighlight %}
+
+Ahora vamos a crear cuatro componentes nuevos para obtener nuestro pequeño sistema de administración (cada linea genera un componente).-
+
+{% highlight javascript linenos %}
+ng generate component components/admin --module modules/admin/admin-routing.module
+ng generate component components/adminNew --module modules/admin/admin-routing.module
+ng generate component components/adminEdit --module modules/admin/admin-routing.module
+ng generate component components/adminView --module modules/admin/admin-routing.module
+{% endhighlight %}
+
+Al crearlos los incluimos al router del modulo "admin", así que pasamos a configurar las rutas para estos componentes, abrimo el archivo "admin-routing.module.ts".-
+
+{% highlight javascript linenos %}
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminComponent } import './componentes/admin/admin.component';
-import { AdminNuevoComponent } import './componentes/admin-nuevo/admin-nuevo.component';
-import { AdminMostrarComponent } import './componentes/admin-mostrar/admin-mostrar.component';
+import { AdminNewComponent } import './componentes/admin-new/admin-new.component';
+import { AdminEditComponent } import './componentes/admin-edit/admin-edit.component';
+import { AdminViewComponent } import './componentes/admin-view/admin-view.component';
 
 const routes: Routes = [
     {
         path: 'admin', component: AdminComponent, children: [
-            { path: 'nuevo', component: AdminNuevoComponent },
-            { path: 'modificar', component: AdminNuevoComponent },
-            { path: 'mostrar', component: AdminMostrarComponent }
+            { path: 'new', component: AdminNewComponent },
+            { path: 'edit', component: AdminEditComponent },
+            { path: 'view', component: AdminViewComponent }
         ]
     }
 ];
 
-export const enruteableComponent = [
-    AdminComponent,
-    AdminNuevoComponent
-    AdminMostrarComponent
-];
-
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    exports: [RouterModule],
+    declarations: [
+        AdminNewComponent,
+        AdminEditComponent,
+        AdminViewComponent,
+        AdminComponent
+    ]
 })
 
 export class AdminRoutingModule { }
 {% endhighlight %}
 
-Lo único que hicimos es agregar las rutas hijas en la ruta padre mediante la propiedad "children" como se muestra en las lineas 10 a 14, recuerda también añadir los componentes utilizado en el router en la constante "enrouteableComponents" para que puedas añadirla al modulo del router.
+Lo único que hicimos es agregar las rutas hijas en la ruta padre mediante la propiedad "children" como se muestra en las lineas 10 a 14, por ultimo vamos a añadir el modulo "admin" al modulo principal de la aplicación.-
 
-> Para la ruta nuevo y modificar utilizamos el mismo componente, lo hicimos con el fin de mediante un parámetro poder decidir la funcionalidad del componente.
+{% highlight javascript linenos %}
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
-Lo importante de trabajar con rutas hijas es que al momento de ser cargadas (solicitadas) sus respectivos componentes se mostraran en el template del componente padre y no del componente principal, así que vamos a necesitar configurar dicho template ("admin.component.html").-
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { InicioModule } from './modules/inicio/inicio.module';
+import { AdminModule } from './modules/admin/admin.module';
+
+@NgModule({
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        InicioModule,
+        AdminModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+})
+export class AppModule { }
+{% endhighlight %}
+
+Lo importante de trabajar con rutas hijas es que al momento de ser cargadas (solicitadas) sus respectivos componentes se mostraran en el template del componente padre y no en el del componente principal, así que vamos a necesitar configurar dicho template ("admin.component.html").-
 
 {% highlight html linenos %}
 <div>
     <ul>
-        <li><a [routerLink]="['/nuevo']">Inicio</a></li>
-        <li><a [routerLink]="['/modifiar']">Modificar</a></li>
-        <li><a [routerLink]="['/mostrar']">Mostrar</a></li>				
+        <li><a [routerLink]="['/admin/new']">Inicio</a></li>
+        <li><a [routerLink]="['/admin/edit']">Modificar</a></li>
+        <li><a [routerLink]="['/admin/view']">Mostrar</a></li>				
     </ul>
 </div>
 
 <router-outlet></router-outlet>
 {% endhighlight %}
+
+Ahora ya puede correr la aplicación y probar el funcionamiento del router.
 
 ## Trabajar con parámetros en las rutas
 
-La subruta para modificar carga el mismo componente que si entráramos a la ruta nuevo, para decidir que tiene que hacer el componente utilizaremos parámetros, para hacerlo debemos de configurarlo dentro de la propiedad "path" seguido de dos puntos (:).-
+Vamos a utilizar el componente "admin-edit" para trabajar con parametros, abrimos el router "admin-routing.module.ts" y debemos de configurarlo dentro de la propiedad "path" seguido de dos puntos (:).-
 
 {% highlight javascript linenos %}
-mport { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminComponent } import './componentes/admin/admin.component';
-import { AdminNuevoComponent } import './componentes/admin-nuevo/admin-nuevo.component';
-import { AdminMostrarComponent } import './componentes/admin-mostrar/admin-mostrar.component';
+import { AdminNewComponent } import './componentes/admin-new/admin-new.component';
+import { AdminEditComponent } import './componentes/admin-edit/admin-edit.component';
+import { AdminViewComponent } import './componentes/admin-view/admin-view.component';
 
 const routes: Routes = [
     {
         path: 'admin', component: AdminComponent, children: [
-            { path: 'nuevo', component: AdminNuevoComponent },
-            { path: 'modificar/:id', component: AdminNuevoComponent },
-            { path: 'mostrar', component: AdminMostrarComponent }
+            { path: 'new', component: AdminNewComponent },
+            { path: 'edit/:id', component: AdminEditComponent },
+            { path: 'view', component: AdminViewComponent }
         ]
     }
 ];
 
-export const enruteableComponent = [
-    AdminComponent,
-    AdminNuevoComponent
-    AdminMostrarComponent
-];
-
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    exports: [RouterModule],
+    declarations: [
+        AdminNewComponent,
+        AdminEditComponent,
+        AdminViewComponent,
+        AdminComponent
+    ]
 })
 
 export class AdminRoutingModule { }
 {% endhighlight %}
 
-En la linea 12 configuramos nuestro parámetro con el identificador "id", ahora para poder ingresar a una ruta con parámetros desde la navegación lo hacemos de la siguiente forma.-
+En la linea 13 configuramos nuestro parámetro con el identificador "id", ahora para poder ingresar a una ruta con parámetros desde la navegación lo hacemos de la siguiente forma.-
 
 {% highlight html linenos %}
 <div>
     <ul>
-        <li><a [routerLink]="['/nuevo']">Inicio</a></li>
-        <li><a [routerLink]="['/modifiar', 132143]">Modificar</a></li>
-        <li><a [routerLink]="['/mostrar']">Mostrar</a></li>				
+        <li><a [routerLink]="['/admin/new']">Inicio</a></li>
+        <li><a [routerLink]="['/admin/edit', 132143]">Modificar</a></li>
+        <li><a [routerLink]="['/admin/view']">Mostrar</a></li>				
     </ul>
 </div>
 
 <router-outlet></router-outlet>
 {% endhighlight %}
 
-El valor del parámetro lo pasamos como segundo valor de la ruta, por ultimo para poder acceder al valor del para metro desde el componente lo hacemos de la siguiente forma.-
+El valor del parámetro lo pasamos como segundo valor de la ruta, por ultimo para poder acceder al valor del parámetro desde el componente lo hacemos de la siguiente forma.-
 
 {% highlight javascript linenos %}
 import { Component, OnInit } from '@angular/core';
 
-import { ActivatedRoute } from '@angular/route';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-admin',
@@ -402,12 +440,13 @@ import { ActivatedRoute } from '@angular/route';
 })
 
 export class AdminComponent implements OnInit {
+    id: number;
 
     constructor( private router : ActivatedRoute ) { }
 
     ngOnInit() {
-        this.router.params.suscribe( params => {
-            const id = params['id'].toString();
+        this.router.params.subscribe( params => {
+            this.id = params['id'].toString();
         });
     }
 }
@@ -415,8 +454,24 @@ export class AdminComponent implements OnInit {
 
 Para poder acceder al valor de un parámetro lo tenemos que hacer con ayuda del servicio ActivatedRoute el cual importamos en la linea 3, para utilizar este servicio debemos de guardarlo en una variable privada, esto lo hacemos como parámetro del constructor de la clase del componente (linea 13) y por ultimo para acceder al valor lo hacemos desde un observable dentro del método "ngOnInit" (lineas 15 a 19).
 
+Ahora solo queda codificar un poco la plantilla de este componente para mostrar el parámetro en pantalla.-
+
+{% highlight html linenos %}
+<p>
+    Parametro = { { id } }
+</p>
+{% endhighlight %}
+
 ## Conclusiones
 
 Construir un router funcional en Angular es muy sencillo, lo tedioso es fragmentar nuestro código para facilitar el mantenimiento de la aplicación, si crees que al articulo le falto abarcar algún tema de importancia, dejalo en el área de comentarios y con gusto analizare agregarlo.
+
+Puedes encontrar el código de ejemplo de este articulo en.-
+
+* [Github Codeando](https://github.com/Codeandomx/development-angular-app-router)
+
+Si te interesa el tema puedes continuar con los siguientes enlaces.-
+
+* Curso: [Curso de Angular](https://github.com/Codeandomx/curso-de-introduccion-a-angular)
 
 Que tengan feliz código.
