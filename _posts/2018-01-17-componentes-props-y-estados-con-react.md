@@ -9,6 +9,10 @@ tags: react javascript
 
 El desarrollo de [aplicaciones web con react](/articulos/introduccion-a-react-creando-aplicacion-basica.html) se vuelve realmente fácil si utilizamos **JSX para crear las vistas y lógica de estas**, en este articulo abarcaremos el tema de los componentes (components) y sus características, claro en complemento con JSX para facilitarnos aun más el desarrollo, pero sobre todo el mantenimiento (corregir errores y/o hacer crecer el proyecto) de nuestra web haciéndola de alguna forma escalable.
 
+<div class="redes-background">
+Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-introduccion-a-react" target="_blank">Curso de React</a>, puedes acceder al código de ejemplo de este articulo desde el repositorio de <a href="https://github.com/Codeandomx/curso-de-introduccion-a-react/tree/02_componentes_props_y_estados" target="_blank">Github</a>.
+</div>
+
 ## Que son los componentes
 
 **Los componentes son pequeños bloques de código** de nuestra aplicación en los cuales podemos encapsular elementos HTML, CSS y Javascript para un fin en especifico, en nuestro caso construiremos estos componentes con [JSX](/articulos/introduccion-a-jsx.html) para facilitar la tarea, además, un componente puede contener uno o varios componentes más y estos pueden ser reutilizados cada ves que sea necesario.

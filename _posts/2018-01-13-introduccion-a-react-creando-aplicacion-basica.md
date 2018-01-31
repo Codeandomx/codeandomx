@@ -11,6 +11,10 @@ Al leer o encontrar algo relacionado con React seguramente si eres desarrollador
 
 Entonces en una conclusión rápida, al utilizar React en nuestro proyecto somos libres de utilizar cualquier librería para complementarlo, por ejemplo, podemos utilizar alguna librería que encontremos por la red para crear nuestro router o utilizar la herramienta que nos proporciona la comunidad React, pero esto seguro les ocasiona más dudas y por ello paso a la siguiente pregunta.
 
+<div class="redes-background">
+Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-introduccion-a-react" target="_blank">Curso de React</a>, puedes acceder al código de ejemplo de este articulo desde el repositorio de <a href="https://github.com/Codeandomx/curso-de-introduccion-a-react" target="_blank">Github</a>.
+</div>
+
 ## Que es React?
 
 React es una librería Javascript que nos ayuda con el renderizado (vista) de nuestra aplicación, fue desarrollada por Facebook quien después libero su código como un proyecto opensource, actualmente es utilizada en producción por grandes empresas como Netflix, Spotify, Github sin olvidarnos del propio Facebook,  entonces si es utilizada por estas empresas realmente es una garantía el poder utilizarla.

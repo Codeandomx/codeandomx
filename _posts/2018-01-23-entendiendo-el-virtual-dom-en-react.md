@@ -9,6 +9,9 @@ tags: react javascript
 
 React introdujo por completo el tema de **virtual DOM** en nuestras tareas de desarrollo (aun que hay muchas librerías con las que lo podemos trabajar), y me gustaría que antes de continuar con el **curso de React** aclaremos que es el DOM, el virtual DOM y las diferencias que existen entre ambos, aun que más que diferencias, son usos que les da React.
 
+<div class="redes-background">
+Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-introduccion-a-react" target="_blank">Curso de React</a>.</div>
+
 ## Que es el DOM?
 
 DOM significa **Document Object Model** y es considerado una abstracción de texto estructurado, note que en la definición hablamos de texto, pues este texto no es más que la estructura HTML del documento que se muestra en pantalla, y cada elemento HTML es considerado un nodo (los nodos a su ves son objetos Javascript) que forma parte del DOM, entonces el DOM lo podemos visualizar como un árbol y el elemento HTML principal estará en la punta (o cima) de este árbol.
@@ -99,6 +102,7 @@ Sabiendo ya las diferencias entre el DOM y el virtual DOM podemos continuar con 
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
 * Articulo anterior: [Componentes, props y estados con React](http://blog.codeando.org/articulos/componentes-props-y-estados-con-react.html)
+* Articulo siguiente: [Manejadores de eventos con React](http://blog.codeando.org/articulos/manejadores-de-eventos-con-react.html)
 * Curso: [Curso de React](https://github.com/Codeandomx/curso-de-introduccion-a-react)
 
 Que tengan feliz código.

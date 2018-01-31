@@ -13,6 +13,10 @@ Si queremos aprender a [crear aplicaciones con React](/articulos/introduccion-a-
 
 Además, necesitaremos algunos de los nuevos elementos y funciones de [ES6](/articulos/introduccion-a-es6-javascript.html) como el uso de let y const, [función arrow](/articulos/funcion-arrow-es6-javascript.html), [clases, herencia y objetos](/articulos/clases-herencia-y-objetos-en-es6-javascript.html). Si no tienes muchos conocimientos sobre esta tecnologías te recomiendo leer los artículos sobre el tema.
 
+<div class="redes-background">
+Este articulo forma parte del <a href="https://github.com/Codeandomx/curso-de-introduccion-a-react" target="_blank">Curso de React</a>, puedes acceder al código de ejemplo de este articulo desde el repositorio de <a href="https://github.com/Codeandomx/curso-de-introduccion-a-react/tree/01_Introduccion_a_jsx" target="_blank">Github</a>.
+</div>
+
 ## Que es JSX?
 
 Los desarrolladores de JSX lo consideran como una **extensión de sintaxis Javascript** para desarrollar **interfaces de usuario** (UI), si lo vemos desde otra perspectiva lo podemos ver como un lenguaje para plantillas como por ejemplo Jade, pero a diferencia de este ultimo, JSX viene con todo el poder de Javascript.
