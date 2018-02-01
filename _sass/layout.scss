@@ -368,6 +368,15 @@ code {
   border-radius: 5px;
   font-weight: bold;
 }
+.content .redes-background a
+{
+  color: #ccc;
+  transition: all 0.25s ease-in
+}
+.content .redes-background a:hover
+{
+  color: #eee;
+}
 .content .redes .align
 {
   display: inline-block;
