@@ -172,6 +172,7 @@ Puedes encontrar el código de ejemplo de este articulo en.-
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
 * Articulo anterior: [Entendiendo el virtual DOM en React](/articulos/entendiendo-el-virtual-dom-en-react.html)
+* Articulo siguiente: [Mostrar datos de arrays con map en React](/articulos/mostrar-datos-de-arrays-con-map-y-react.html)
 * Curso: [Curso de React](https://github.com/Codeandomx/curso-de-introduccion-a-react)
 
 Que tengan feliz código.
