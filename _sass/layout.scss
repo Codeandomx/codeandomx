@@ -1,5 +1,25 @@
 /* -- General Layout -- */
 
+/* Related */
+
+#related{
+  
+}
+#related ul{
+  list-style: none;
+}
+#related ul li{
+  padding: 5px;
+}
+#related a{
+  transition: all 0.25s ease-in-out;
+}
+#related a:hover{
+  cursor: pointer;
+  color: #5F4F6F;
+  margin-left: 15px;
+}
+
 /* Search */
 
 #search{
