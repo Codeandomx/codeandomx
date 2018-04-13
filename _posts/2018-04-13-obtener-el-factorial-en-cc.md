@@ -15,7 +15,7 @@ El factorial de un entero positivo n, el factorial de n o n factorial se define 
 
 ## Algoritmo para factorial en C/C++
 
-El siguiente método nos permite obtener el factorial de un número dado, el resultado estara limitado segun el sistema operativo con el que trabajaemos (32 o 64 bits).-
+El siguiente método nos permite obtener el factorial de un número dado, el resultado estará limitado según el sistema operativo con el que trabajemos (32 o 64 bits).-
 
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
@@ -49,7 +49,7 @@ long long int(int n)
 El funcionamiento del algoritmo es bastante simple, en la linea 3 declaramos la variable "fac" en la cual almacenaremos el producto de los números naturales hasta n.-
 
 {% highlight c linenos %}
-// Declaramos fac para lamacenar el producto del factorial
+// Declaramos fac para almacenar el producto del factorial
 long long int fac = 1;
 {% endhighlight %}
 
@@ -75,9 +75,9 @@ for(int i = 1; i <= n; i++){
 
 ## Desbordamiento de pila
 
-Al contrario del [algoritmo utilizado en Java](http://blog.codeando.org/articulos/obtener-el-factorial-de-un-numero-con-java.html) en C/C++ no tenemos una clase como BigItenger para utilizar numeros bastante grandes, pero se puede construir un sistema basado en strings para solucionar este problema, aun que es un poco complejo, pero este ya es tema para otro articulo.
+Al contrario del [algoritmo utilizado en Java](http://blog.codeando.org/articulos/obtener-el-factorial-de-un-numero-con-java.html) en C/C++ no tenemos una clase como BigItenger para utilizar números bastante grandes, pero se puede construir un sistema basado en strings para solucionar este problema, aun que es un poco complejo, pero este ya es tema para otro articulo.
 
-Asi que por el momento solo podemos calcular el factorial hasta el número 20, ya que apartir del número 21 se deborda la memoria.
+Así que por el momento solo podemos calcular el factorial hasta el número 20, ya que a partir del número 21 se desborda la memoria.
 
 ## Casos de uso
 
@@ -110,7 +110,7 @@ int main()
 }
 {% endhighlight %}
 
-> Para imprimir un numero de tipo long long int, utilizamos el caracter de salida %lli para sistemas GNU Linux y %l64 para sistemas Windows.
+> Para imprimir un numero de tipo long long int, utilizamos el carácter de salida %lli para sistemas GNU Linux y %l64 para sistemas Windows.
 
 Ahora si ejecutamos el programa y probamos con el conjunto de datos { 20, 21 } obtendremos el siguiente resultado.-
 
@@ -127,7 +127,7 @@ Donde se nota que en el ejemplo para el numero 21 hubo un desbordamiento de memo
 
 Puedes encontrar el código completo en el siguiente enlace (repositorio de github).-
 
-[Factorial.cpp]()
+[Factorial.cpp](https://github.com/Codeandomx/algoritmos-c/blob/master/Factorial.cpp)
 
 ## Conclusiones
 
