@@ -1,8 +1,8 @@
 ---
 title: Determinar si son números primos en C/C++
 author: Paulo Andrade
-categories: C/C++
-tags: C/C++ algoritmos
+categories: c
+tags: c algoritmos
 ---
 
 ![Numeros primos en C/C++](/img/c.jpg)
