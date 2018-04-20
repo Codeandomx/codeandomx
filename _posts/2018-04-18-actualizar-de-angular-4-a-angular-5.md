@@ -7,9 +7,13 @@ tags: angular javascript
 
 ![Angular](/img/angular2.jpg)
 
-[MicroPost] si estas interesado en actualizar un proyecto ya existe de Angular tienes dos opciones para elegir, la primera es [actualizar Angular CLI](http://blog.codeando.org/articulos/actualizar-angular-cli-y-crear-proyecto-para-angular-5.html) y crear un nuevo proyecto en Angular 5, si lo haces de esta forma, una vez creado el proyecto nuevo solo debes copiar los archivos (componentes, servicios, etc) de tu proyecto anterior al nuevo.
+[MicroPost] si estas interesado en actualizar un proyecto ya existente de Angular tienes dos opciones para elegir, la primera es [actualizar Angular CLI](http://blog.codeando.org/articulos/actualizar-angular-cli-y-crear-proyecto-para-angular-5.html) y crear un nuevo proyecto en Angular 5, si lo haces de esta forma, una vez creado el proyecto nuevo solo debes copiar los archivos (componentes, servicios, etc) de tu proyecto anterior al nuevo.
 
 La segunda opción es la que describimos a continuación, en mi opinión es mejor.
+
+<div class="redes-background">
+Puedes acceder al <a href="http://github.com/codeandomx/curso-de-introduccion-a-angular" target="_blank">curso gratuito de Angular</a> para aprender más sobre este framework.
+</div>
 
 ## Actualizar a Angular 5
 

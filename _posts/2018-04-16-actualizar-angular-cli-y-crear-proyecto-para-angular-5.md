@@ -9,6 +9,10 @@ tags: angular javascript
 
 [Angular CLI](http://blog.codeando.org/articulos/mi-primera-app-con-angular-y-angular-cli.html) es una herramienta de linea de comandos imprescindible para crear nuestros proyectos con Angular, normalmente para poder tener la ultima versión estable de Angular (actualmente la versión 5 es la estable y la versión 6 esta en fase de desarrollo) es necesario actualizar, lo cual aprenderemos a hacer en este articulo.
 
+<div class="redes-background">
+Puedes acceder al <a href="http://github.com/codeandomx/curso-de-introduccion-a-angular" target="_blank">curso gratuito de Angular</a> para aprender más sobre este framework.
+</div>
+
 ## Fase previa (NodeJS)
 
 Si estas trabajando con Angular lo más seguro es que tengas instalado NodeJs, a menos que tu proyecto no este creado con Angular CLI, puedes comprobarlo ejecutando el siguiente comando.-
