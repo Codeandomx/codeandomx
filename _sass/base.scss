@@ -3,6 +3,7 @@
  */
 
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 /*- Base reset -*/
 
@@ -16,7 +17,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Oxygen';
+  font-family: 'Lato','Oxygen';
 }
 
 /*- Base color -*/
@@ -29,11 +30,11 @@ $text-color: #333;
 
 html {
 	background-color: $background-color;
-	font-size: 16px;
+	font-size: 20px;
 	@media (min-width: 940px) {
 		font-size: 16px;
 	}
-	line-height: 1.5;
+	line-height: 1.6;
 	color: $text-color;
 }
 
