@@ -5,7 +5,7 @@ categories: reactjs
 tags: react javascript
 ---
 
-![Entendiendo el virtual DOM con React](http://blog.codeando.org/img/react.jpg)
+![Entendiendo el virtual DOM con React](/img/react.jpg)
 
 React introdujo por completo el tema de **virtual DOM** en nuestras tareas de desarrollo (aun que hay muchas librerías con las que lo podemos trabajar), y me gustaría que antes de continuar con el **curso de React** aclaremos que es el DOM, el virtual DOM y las diferencias que existen entre ambos, aun que más que diferencias, son usos que les da React.
 

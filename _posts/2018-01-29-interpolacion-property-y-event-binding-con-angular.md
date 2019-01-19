@@ -5,11 +5,11 @@ categories: angular2
 tags: angular javascript es6
 ---
 
-![Interpolación, properties y databinding en Angular](http://blog.codeando.org/img/angular2.jpg)
+![Interpolación, properties y databinding en Angular](/img/angular2.jpg)
 
 Nuestra aplicación de Angular ya cuenta con un componente que nos va a permitir agregar y mostrar en pantalla enlaces de interés mediante un pequeño formulario, pero en este momento aun no realiza nada útil nuestra aplicación, es decir, aun no es funcional, en este articulo nos vamos a dedicar a darle un poco de esa funcionalidad que se necesita.
 
-Puedes acceder al articulo anterior [plantillas y estilos CSS con Angulra](http://blog.codeando.org/articulos/plantillas-y-estilos-css-con-angular.html) para ver el proceso de creación de la plantilla y estilos con los que trabajaremos en este articulo, o si lo prefieres, puedes acceder a nuestro [repositorio de github](https://github.com/Codeandomx/curso-de-introduccion-a-angular/tree/02_plantillas_y_estilos_css) para obtener el código directamente.
+Puedes acceder al articulo anterior [plantillas y estilos CSS con Angulra](/articulos/plantillas-y-estilos-css-con-angular.html) para ver el proceso de creación de la plantilla y estilos con los que trabajaremos en este articulo, o si lo prefieres, puedes acceder a nuestro [repositorio de github](https://github.com/Codeandomx/curso-de-introduccion-a-angular/tree/02_plantillas_y_estilos_css) para obtener el código directamente.
 
 Al correr la aplicación se debe de ver de esta forma.-
 
@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit
 
     ngOnInit() {
         this.sitiosInteres = [
-            { name: 'Blog Codeando', url: 'http://blog.codeando.org' },
+            { name: 'Blog Codeando', url: '' },
             { name: 'Github', url: 'https://github.com/codeandomx' },
             { name: 'Twitter', url: 'https://twitter.com/codeando_org' },
             { name: 'Facebook', url: 'https://facebook.com/codeando.org' }
@@ -206,7 +206,7 @@ site: iSite;
 La inicializamos dentro del método ngOnInit() con los valores del primer sitio de interés que utilizamos.-
 
 {% highlight javascript linenos %}
-this.site = { name: 'Blog Codeando', url: 'http://blog.codeando.org' };
+this.site = { name: 'Blog Codeando', url: '' };
 {% endhighlight %}
 
 Si corremos nuestra aplicación deberemos de ver lo siguiente en pantalla.-
@@ -264,7 +264,7 @@ export class HomeComponent implements OnInit
 
     ngOnInit() {
         this.sitiosInteres = [
-            { name: 'Blog Codeando', url: 'http://blog.codeando.org' },
+            { name: 'Blog Codeando', url: '' },
             { name: 'Github', url: 'https://github.com/codeandomx' },
             { name: 'Twitter', url: 'https://twitter.com/codeando_org' },
             { name: 'Facebook', url: 'https://facebook.com/codeando.org' }
@@ -272,7 +272,7 @@ export class HomeComponent implements OnInit
         this.formTitle = "Agrega un item a la lista";
         this.listTitle = "Lista de items";
         this.btnText = "Agregar item";
-        this.site = { name: 'Blog Codeando', url: 'http://blog.codeando.org' };
+        this.site = { name: 'Blog Codeando', url: '' };
     }
 		
     setSite(site: iSite) {
@@ -296,8 +296,8 @@ Puedes encontrar el código de ejemplo de este articulo en.-
 
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
-* Articulo anterior: [Plantillas y estilos CSS con Angular](http://blog.codeando.org/articulos/plantillas-y-estilos-css-con-angular.html)
-* Articulo siguiente: [Formularios con Angular](http://blog.codeando.org/articulos/formularios-con-angular.html)
+* Articulo anterior: [Plantillas y estilos CSS con Angular](/articulos/plantillas-y-estilos-css-con-angular.html)
+* Articulo siguiente: [Formularios con Angular](/articulos/formularios-con-angular.html)
 * Curso: [Curso de Angular](https://github.com/Codeandomx/curso-de-introduccion-a-angular)
 
 Que tengan feliz código.

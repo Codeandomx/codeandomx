@@ -5,7 +5,7 @@ categories: angular2
 tags: angular javascript
 ---
 
-![Iconos para angular con font-awesome](http://blog.codeando.org/img/angular2.jpg)
+![Iconos para angular con font-awesome](/img/angular2.jpg)
 
 Actualmente el uso de iconos vectoriales (se ajustan/escalan al tamaño que los necesitemos) en nuestras aplicaciones es indispensable, y font awesome es una gran alternativa para poder utilizarlos en nuestras aplicaciones de Angular, su instalación y configuración es muy sencilla, así como la forma de utilizarlos, en este articulo aprenderemos a hacerlo.
 
@@ -21,9 +21,9 @@ Puedes encontrar más información en su [pagina oficial](https://fontawesome.co
 
 ## Instalando font awesome con Angular CLI
 
-Su instalación es muy sencilla, vamos al directorio principal de nuestra aplicación [Angular](http://blog.codeando.org/articulos/un-vistazo-a-angular-2.html) e instalamos las dependencias necesarias.-
+Su instalación es muy sencilla, vamos al directorio principal de nuestra aplicación [Angular](/articulos/un-vistazo-a-angular-2.html) e instalamos las dependencias necesarias.-
 
-> Puedes seguir el tutorial [crear mi primera aplicación con Angular CLI](http://blog.codeando.org/articulos/mi-primera-app-con-angular-y-angular-cli.html) si eres nuevo en Angular.
+> Puedes seguir el tutorial [crear mi primera aplicación con Angular CLI](/articulos/mi-primera-app-con-angular-y-angular-cli.html) si eres nuevo en Angular.
 
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"

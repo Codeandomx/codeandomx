@@ -5,9 +5,9 @@ categories: angular2
 tags: angular javascript es6
 ---
 
-![Mostrar y ocultar elementos con Angular](http://blog.codeando.org/img/angular2.jpg)
+![Mostrar y ocultar elementos con Angular](/img/angular2.jpg)
 
-En el articulo pasado aprendimos a trabajar con [servicios en Angular](http://blog.codeando.org/articulos/servicios-con-angular.html), y como como parte de este proceso borramos los sitios de interés que declaramos de forma manual para poder mostrar solamente los que añadimos mediante un [formulario](http://blog.codeando.org/articulos/formularios-con-angular.html), al haber hecho este cambio y cargar la aplicación por primera vez, vemos en pantalla el siguiente cuadro rojo.-
+En el articulo pasado aprendimos a trabajar con [servicios en Angular](/articulos/servicios-con-angular.html), y como como parte de este proceso borramos los sitios de interés que declaramos de forma manual para poder mostrar solamente los que añadimos mediante un [formulario](/articulos/formularios-con-angular.html), al haber hecho este cambio y cargar la aplicación por primera vez, vemos en pantalla el siguiente cuadro rojo.-
 
 ![show and hidden an element Angular](/img/angular6.jpg)
 
@@ -89,7 +89,7 @@ Puedes encontrar el código de ejemplo de este articulo en.-
 
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
-* Articulo anterior:  [Servicios con Angular](http://blog.codeando.org/articulos/servicios-con-angular.html).
+* Articulo anterior:  [Servicios con Angular](/articulos/servicios-con-angular.html).
 * Curso: [Curso de Angular](https://github.com/Codeandomx/curso-de-introduccion-a-angular).
 
 Que tengan feliz código.

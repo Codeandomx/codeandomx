@@ -75,7 +75,7 @@ for(int i = 1; i <= n; i++){
 
 ## Desbordamiento de pila
 
-Al contrario del [algoritmo utilizado en Java](http://blog.codeando.org/articulos/obtener-el-factorial-de-un-numero-con-java.html) en C/C++ no tenemos una clase como BigItenger para utilizar números bastante grandes, pero se puede construir un sistema basado en strings para solucionar este problema, aun que es un poco complejo, pero este ya es tema para otro articulo.
+Al contrario del [algoritmo utilizado en Java](/articulos/obtener-el-factorial-de-un-numero-con-java.html) en C/C++ no tenemos una clase como BigItenger para utilizar números bastante grandes, pero se puede construir un sistema basado en strings para solucionar este problema, aun que es un poco complejo, pero este ya es tema para otro articulo.
 
 Así que por el momento solo podemos calcular el factorial hasta el número 20, ya que a partir del número 21 se desborda la memoria.
 

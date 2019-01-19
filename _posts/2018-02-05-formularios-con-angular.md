@@ -5,7 +5,7 @@ categories: angular2
 tags: angular javascript es6
 ---
 
-![Formularios forms con Angular](http://blog.codeando.org/img/angular2.jpg)
+![Formularios forms con Angular](/img/angular2.jpg)
 
 El uso de formularios es indispensable en cualquier tipo de aplicación (inicio de sesión, contacto, ayuda, etc), y con Angular no podría ser la excepción, si ya has trabajado con formularios utilizando Javascript puro (un trabajo un poco tedioso), te sorprenderá la diferencia al trabajar con formularios en Angular ya que es muy sencillo.
 

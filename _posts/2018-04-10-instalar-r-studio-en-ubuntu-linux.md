@@ -7,7 +7,7 @@ tags: r ubuntu
 
 ![Instalacion R programming](/img/r.jpg)
 
-En el articulo anterior aprendimos a [instalar R en  Ubuntu](http://blog.codeando.org/articulos/instalar-r-en-ubuntu-linux.html), en este articulo aprenderemos a instalar R Studio, un IDE para trabajar R haciendolo más fácil de usar, además, incluye un editor de código, herramientas de depuración y visualización.
+En el articulo anterior aprendimos a [instalar R en  Ubuntu](/articulos/instalar-r-en-ubuntu-linux.html), en este articulo aprenderemos a instalar R Studio, un IDE para trabajar R haciendolo más fácil de usar, además, incluye un editor de código, herramientas de depuración y visualización.
 
 ## Instalar R Studio
 

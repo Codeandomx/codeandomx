@@ -7,7 +7,7 @@ tags: r
 
 ![Vectores o arrays con R programming](/img/r.jpg)
 
-En el articulo anterior aprendimos los [conceptos básicos del lenguaje para estadística R](http://blog.codeando.org/articulos/introduccion-a-r-variables-y-tipos-de-datos.html), en el cual abarcamos una breve descripción del lenguaje, introducción a los tipos de datos básicos y como trabajar con las variables.
+En el articulo anterior aprendimos los [conceptos básicos del lenguaje para estadística R](/articulos/introduccion-a-r-variables-y-tipos-de-datos.html), en el cual abarcamos una breve descripción del lenguaje, introducción a los tipos de datos básicos y como trabajar con las variables.
 
 En este articulo aprenderemos a trabajar con vectores o también conocidos como arrays unidimensionales en R.
 

@@ -5,7 +5,7 @@ categories: angular2
 tags: angular javascript es6
 ---
 
-![Servicios con Angular](http://blog.codeando.org/img/angular2.jpg)
+![Servicios con Angular](/img/angular2.jpg)
 
 Los servicios son la mejor forma de **compartir datos y funcionalidades entre componentes** con Angular, ya sean datos propios (datos almacenados temporalmente en nuestra aplicación) u obtenidos desde una **API Rest**, en nuestra aplicación trabajamos con un objeto en donde almacenamos nuestros datos, pero este objeto esta declarado en un componente, así que solo existe en su scope (ámbito) y no podemos acceder a estos datos desde otras partes de la aplicación.
 

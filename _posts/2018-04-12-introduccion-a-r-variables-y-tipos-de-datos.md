@@ -7,7 +7,7 @@ tags: r
 
 ![Introducción a R, variables y tipos de datos](/img/r.jpg)
 
-En artículos pasados aprendimos a [instalar R en sistemas Ubuntu](http://blog.codeando.org/articulos/instalar-r-en-ubuntu-linux.html) (16.XX y 17.XX), además, aprendimos a [instalar R Studio](http://blog.codeando.org/articulos/instalar-r-studio-en-ubuntu-linux.html), un IDE para empezar a crear proyectos basados en R de forma muy simple, así que antes de continuar te recomiendo darle una leída a los artículos anteriores.
+En artículos pasados aprendimos a [instalar R en sistemas Ubuntu](/articulos/instalar-r-en-ubuntu-linux.html) (16.XX y 17.XX), además, aprendimos a [instalar R Studio](/articulos/instalar-r-studio-en-ubuntu-linux.html), un IDE para empezar a crear proyectos basados en R de forma muy simple, así que antes de continuar te recomiendo darle una leída a los artículos anteriores.
 
 ## Comentarios en R
 

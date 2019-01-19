@@ -5,7 +5,7 @@ categories: angular2
 tags: angular javascript
 ---
 
-![Modo offline con Angular y service worker](http://blog.codeando.org/img/angular2.jpg)
+![Modo offline con Angular y service worker](/img/angular2.jpg)
 
 Un problema habitual de las SPA (Single Page Application) es que tarda mucho en cargar por que toda la lógica de la aplicación se carga en un solo archivo, gracias a la API de service worker (incluidos en Angular 5+) podemos cargar más rápido nuestra aplicación y hacer que funcione fuera de linea (sin internet), en este articulo vamos a crear una aplicación con angular y a configurar un service worker para la misma.
 

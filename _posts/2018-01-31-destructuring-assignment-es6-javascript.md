@@ -7,7 +7,7 @@ tags: es6 javascript
 
 ![destructuring assignment](/img/es6.jpg)
 
-Destructuring assignmen o asignación por destructuración  es otro de los pequeños cambios del nuevo estándar de [Javascript (ES6)](http://blog.codeando.org/articulos/introduccion-a-es6-javascript.html) pero que seguramente nos sera de gran utilidad al momento de programar, ya que nos facilitara la extracción de datos de los objetos de una forma sencilla.
+Destructuring assignmen o asignación por destructuración  es otro de los pequeños cambios del nuevo estándar de [Javascript (ES6)](/articulos/introduccion-a-es6-javascript.html) pero que seguramente nos sera de gran utilidad al momento de programar, ya que nos facilitara la extracción de datos de los objetos de una forma sencilla.
 
 > Recuerda que en Javascript los array son considerados objetos.
 

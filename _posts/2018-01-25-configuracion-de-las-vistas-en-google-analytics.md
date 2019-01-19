@@ -5,9 +5,9 @@ categories: analytics
 tags: google analytics
 ---
 
-![Configuración de las vistas en Google Analytics](http://blog.codeando.org/img/analytics.jpg)
+![Configuración de las vistas en Google Analytics](/img/analytics.jpg)
 
-En el articulo anterior vimos una [introducción a Google Analytics](http://blog.codeando.org/articulos/introduccion-a-google-analytics.html), aprendimos a grandes rasgos la forma es **como se organizan los datos recopilados**, dentro de esta organización encontramos la estructura que va desde una cuenta, la cual puede tener varias propiedades (sitios web o aplicaciones móviles registradas) y estas a su vez varias vistas.
+En el articulo anterior vimos una [introducción a Google Analytics](/articulos/introduccion-a-google-analytics.html), aprendimos a grandes rasgos la forma es **como se organizan los datos recopilados**, dentro de esta organización encontramos la estructura que va desde una cuenta, la cual puede tener varias propiedades (sitios web o aplicaciones móviles registradas) y estas a su vez varias vistas.
 
 ## Para que nos sirven las vistas?
 

@@ -7,7 +7,7 @@ tags: r
 
 ![Matrices en R programming](/img/r.jpg)
 
-En el articulo anterior aprendimos a trabajar con [vectores en R](http://blog.codeando.org/articulos/vectores-arrays-en-r.html) (también conocidos como arrays unidimensionales), en este articulo hablaremos sobre las matrices en R o array bidimensional, como declararlas e inicializarlas, trabajar con estas y lo más importante en la analítica de datos, realizar operaciones con estas.
+En el articulo anterior aprendimos a trabajar con [vectores en R](/articulos/vectores-arrays-en-r.html) (también conocidos como arrays unidimensionales), en este articulo hablaremos sobre las matrices en R o array bidimensional, como declararlas e inicializarlas, trabajar con estas y lo más importante en la analítica de datos, realizar operaciones con estas.
 
 ## Que son las matrices
 

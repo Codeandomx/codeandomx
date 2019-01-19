@@ -5,7 +5,7 @@ categories: reactjs
 tags: react javascript es6
 ---
 
-![handling event react](http://blog.codeando.org/img/react.jpg)
+![handling event react](/img/react.jpg)
 
 El **manejo de eventos en React** es muy parecido a como lo hacemos normalmente con Javascript, aunque este ultimo suele utilizar oyentes como "addEventListener()" en elementos del DOM en espera de, como su nombre lo indica, **ocurra algún evento**, con React no funciona de esta forma, el oyente se incluye al elemento cuando se añade el evento.
 

@@ -5,7 +5,7 @@ categories: reactjs
 tags: react javascript es6
 ---
 
-![Mostrar datos de arrays con map y React](http://blog.codeando.org/img/react.jpg)
+![Mostrar datos de arrays con map y React](/img/react.jpg)
 
 Antes de comenzar debemos recordar que en Javascript todos los array (incluso todo los elementos) son considerados objetos, una vez aclarado este punto podemos seguir, una de las formas habituales de almacenar datos en Javascript es añadirlos a un **objeto con sintaxis JSON** y en React no es la excepción, en este articulo veremos como manipular los datos de los objetos mediante el método map() en nuestros componentes.
 

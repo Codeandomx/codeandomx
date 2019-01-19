@@ -5,7 +5,7 @@ categories: analytics
 tags: google analytics
 ---
 
-![Introduccion a Google Analytics](http://blog.codeando.org/img/analytics.jpg)
+![Introduccion a Google Analytics](/img/analytics.jpg)
 
 La **analítica digital** cada ves es más importante en un mundo online, por ejemplo, es interesante poder recopilar datos de una campaña publicitaria, como que tipos de usuarios nos visitan, desde que ubicación lo hacen, que dispositivo y/o navegador utilizan y cuales serian sus preferencias en nuestro sitio.
 

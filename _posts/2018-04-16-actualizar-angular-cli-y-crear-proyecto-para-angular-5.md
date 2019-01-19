@@ -7,7 +7,7 @@ tags: angular javascript
 
 ![Angular](/img/angular2.jpg)
 
-[Angular CLI](http://blog.codeando.org/articulos/mi-primera-app-con-angular-y-angular-cli.html) es una herramienta de linea de comandos imprescindible para crear nuestros proyectos con Angular, normalmente para poder tener la ultima versión estable de Angular (actualmente la versión 5 es la estable y la versión 6 esta en fase de desarrollo) es necesario actualizar, lo cual aprenderemos a hacer en este articulo.
+[Angular CLI](/articulos/mi-primera-app-con-angular-y-angular-cli.html) es una herramienta de linea de comandos imprescindible para crear nuestros proyectos con Angular, normalmente para poder tener la ultima versión estable de Angular (actualmente la versión 5 es la estable y la versión 6 esta en fase de desarrollo) es necesario actualizar, lo cual aprenderemos a hacer en este articulo.
 
 <div class="redes-background">
 Puedes acceder al <a href="http://github.com/codeandomx/curso-de-introduccion-a-angular" target="_blank">curso gratuito de Angular</a> para aprender más sobre este framework.
@@ -89,7 +89,7 @@ Angular:
 
 ## Crear un nuevo proyecto con Angular 5
 
-Ahora que tenemos actualizado Angular CLI, vamos a [crear un nuevo proyecto](http://blog.codeando.org/articulos/mi-primera-app-con-angular-y-angular-cli.html) (donde se instalaran las librerías y paquetes necesarios para trabajar con Angular 5).-
+Ahora que tenemos actualizado Angular CLI, vamos a [crear un nuevo proyecto](/articulos/mi-primera-app-con-angular-y-angular-cli.html) (donde se instalaran las librerías y paquetes necesarios para trabajar con Angular 5).-
 
 {% highlight javascript linenos %}
 $ ng ne project_name && cd project_name
