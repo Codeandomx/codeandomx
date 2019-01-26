@@ -1,8 +1,9 @@
 ---
+title: Instalar o actualizar NodeJS en Ubuntu simple
+layout: post
 author: Paulo Andrade
 categories: nodejs
 tags: nodejs ubuntu
-title: Instalar o actualizar NodeJS en Ubuntu
 ---
 
 ![Instalar o actualizar nodejs en ubuntu](/img/nodejs.jpg)
