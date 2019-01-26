@@ -1,5 +1,6 @@
 ---
 title: Instalar Nginx en Ubuntu Server
+layout: post
 author: Paulo Andrade
 categories: nginx
 tags: nginx ubuntu
@@ -73,7 +74,7 @@ A continuación les muestro un listado de los directorios y archivos que necesit
 Vamos a configurar el sitio que vamos a servir cuando llamemos a nuestro dominio (si no tenemos un dominio puede mediante una IP), esta configuración la encontramos en el archivo default del directorio "/etc/nginx/sites-available/", asi que lo editamos.-
 
 {% highlight javascript linenos %}
-$ sudo nano /etc/nginx/sites-available/default
+$ sudo nano /etc/nginx/sites-available/codeando.club
 {% endhighlight %}
 
 Y nos deberá quedar de esta forma.-
@@ -84,7 +85,7 @@ server {
     listen [::]:80 default_server;
     root /var/www/html/codeando/public_html;
     index index.html index.htm index.nginx-debian.html;
-    server_name codeando.org;
+    server_name codeando.club;
     location / {
         try_files $uri $uri/ =404;
     }
@@ -100,7 +101,7 @@ Entre las lineas importantes menciono las siguientes.-
 
 > Recuerda que para utilizar un dominio personalizado deberás ser propietario del mismo y tener configurado sus registros DNS con tu proveedor de servicio.
 
-Ahora solo guardamos el archivo (ctr + o) y salimos del mismo (ctr + x) y comprobamos que no exista errores de sintaxis mediante el siguiente comando.-
+Ahora solo guardamos el archivo (CTR + o) y salimos del mismo (CTR + x) y comprobamos que no exista errores de sintaxis mediante el siguiente comando.-
 
 {% highlight javascript linenos %}
 $ sudo nginx -t
@@ -121,10 +122,28 @@ $ sudo mkdir -p /var/www/html/codeando/public_html
 
 > El flag -p nos permite crear directorios intermedios que no existan si así se requiere.
 
+Asignamos este nuevo directorio a nuestro usuario.-
+
+{% highlight javascript linenos %}
+sudo chown -R $USER:$USER /var/www/html/codeando/public_html
+{% endhighlight %}
+
+Damos los  permisos necesarios al servidor.-
+
+{% highlight javascript linenos %}
+$ sudo sudo chmod -R 755 /var/www/html/codeando/
+{% endhighlight %}
+
 Y por ultimo creamos un archivo para mostrar al servir la aplicación.-
 
 {% highlight javascript linenos %}
 $ sudo nano /var/www/html/codeando/public_html/index.html
+{% endhighlight %}
+
+Para que nuestro servidor pueda detectar este nuevo sitio, necesitamos habilitar el archivo de configuración creando un enlace desde este al directorio **sites-enabled**, el cual Nginx lee durante el inicio.-
+
+{% highlight javascript linenos %}
+$ sudo ln -s /etc/nginx/sites-available/codeando.club /etc/nginx/sites-enabled/
 {% endhighlight %}
 
 Le podemos poner como contenido simplemente "Hello codeando", para que los cambios surtan efecto debemos reiniciar nuestro servidor.-
@@ -135,6 +154,8 @@ $ sudo service nginx restart
 
 Ya tenemos todo listo, pero antes de servir la aplicación debemos configurar el firewall de Nginx para que permita trafico http y/ https.
 
+> **Nota:** En el path de nuestro directorio utilizo codeando para identificar mi host, puedes cambiarlo por el que necesites: /var/www/html/my_site/public_html/
+
 ## Configuración del firewall
 
 Primero debemos verificar el status del firewall, lo hacemos con el siguiente comando.-
@@ -142,6 +163,8 @@ Primero debemos verificar el status del firewall, lo hacemos con el siguiente co
 {% highlight javascript linenos %}
 $ sudo ufw status
 {% endhighlight %}
+
+> **Nota:** Si no tienes instalado el firewall, instalalo con el comando "sudo apt-get install ufw".
 
 En caso de que nos llegue aparecer el mensaje "Status: inactive", debemos activarlo con el siguiente comando, en caso contrario continue.-
 

@@ -1,0 +1,22 @@
+<script type="text/javascript">
+// Carga lenta en imagenes
+let lazyImages = [...document.getElementsByTagName('img')];
+let inAdvance = 300;
+
+let lazyLoad = () => {
+    lazyImages.forEach(image => {
+        if (image.offsetTop < window.innerHeight + window.pageYOffset + inAdvance) {
+            image.src = image.dataset.src;
+            image.onload = () => image.classList.add('loaded');
+            console.log('loaded');
+        }
+    });
+
+    // if all loaded removeEventListener
+}
+
+lazyLoad();
+
+window.addEventListener('scroll', _.throttle(lazyLoad, 16));
+window.addEventListener('resize', _.throttle(lazyLoad, 16));
+</script>

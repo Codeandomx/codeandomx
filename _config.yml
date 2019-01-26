@@ -1,11 +1,11 @@
 ---
 title: Codeando | Plataforma de cursos
 description: Cursos y tutoriales de programación y desarrollo web
-url: http://blog.codeando.org
+url: http://blog.codeando.club
 author:
   name: Paulo Andrade
   email: source.compu@gmail.com
-  url: http://blog.codeando.org
+  url: http://blog.codeando.club
 collections:
   my_categories:
     output: true
