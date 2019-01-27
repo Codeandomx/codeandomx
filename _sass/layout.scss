@@ -1,5 +1,9 @@
 /* -- General Layout -- */
 
+/* Nav bar */
+
+
+
 /* Related */
 
 #related{
@@ -145,6 +149,9 @@
 
 #nav-menu-left {
   @include icon-position(left);
+  @media (min-width: 940px) {
+      display: none;
+    }
 }
 #nav-menu:hover,
 #nav-menu-left:hover
