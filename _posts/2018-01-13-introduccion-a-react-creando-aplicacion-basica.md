@@ -266,7 +266,7 @@ Corremos nuestra app y en el navegador tendremos que ver lo siguiente.-
 En hora buena, ya tenemos corriendo nuestra primera aplicación con React, seguramente durante el proceso surgieron muchas dudas, déjenlas en el área de comentarios y con gusto los auxiliare, también pueden hacerlas vía twitter.-
 
 * [@paulo_866](https://twitter.com/paulo_866)
-* [@codeando_org](https://twitter.com/codeando_org)
+* [@codeandoclub](https://twitter.com/codeandoclub)
 
 Pueden ingresar al repositorio de github para comparar el código en el siguiente enlace.-
 

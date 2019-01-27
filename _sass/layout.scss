@@ -244,6 +244,9 @@
     line-height: 1.3333em;
     padding: 0.33335em 0;
   }
+  @media (max-width: 480px) {
+    padding-top: 60 px;
+  }
 }
 
 /* Posts */

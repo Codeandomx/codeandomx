@@ -101,8 +101,8 @@ Sabiendo ya las diferencias entre el DOM y el virtual DOM podemos continuar con 
 
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
-* Articulo anterior: [Componentes, props y estados con React](http://blog.codeando.org/articulos/componentes-props-y-estados-con-react.html)
-* Articulo siguiente: [Manejadores de eventos con React](http://blog.codeando.org/articulos/manejadores-de-eventos-con-react.html)
+* Articulo anterior: [Componentes, props y estados con React](/articulos/componentes-props-y-estados-con-react.html)
+* Articulo siguiente: [Manejadores de eventos con React](/articulos/manejadores-de-eventos-con-react.html)
 * Curso: [Curso de React](https://github.com/Codeandomx/curso-de-introduccion-a-react)
 
 Que tengan feliz código.

@@ -128,9 +128,9 @@ Recordamos que en el método ngOnInit() tenemos inicializado manualmente el arra
 
 {% highlight javascript linenos %}
 this.sitiosInteres = [
-    { name: 'Blog Codeando', url: 'http://blog.codeando.org' },
+    { name: 'Blog Codeando', url: 'http://blog.codeando.club' },
     { name: 'Github', url: 'https://github.com/codeandomx' },
-    { name: 'Twitter', url: 'https://twitter.com/codeando_org' },
+    { name: 'Twitter', url: 'https://twitter.com/codeandoclub' },
     { name: 'Facebook', url: 'https://facebook.com/codeando.org' }
 ];
 {% endhighlight %}
