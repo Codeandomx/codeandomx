@@ -1,5 +1,6 @@
 ---
 title: Crear usuarios en Ubuntu server
+layout: post
 author: Paulo Andrade
 categories: ubuntu
 tags: ubuntu server
@@ -56,6 +57,24 @@ $ su codeando
 {% endhighlight %}
 
 Y nos pedirá el password del usuario, y listo ya estamos utilizándolo.
+
+> Se puede dar el caso en el que no se solicite una constraseña al momento de cambiar de usuario (por que lo acabamos de crear).
+
+## Asignar contraseña al nuevo usuario
+
+Una vez que cambiemos al usuario nuevo, ejecutammos el siguiente comando para que nos solicite nuestra contraseña.-
+
+{% highlight javascript linenos %}
+$ sudo passwd codeando
+{% endhighlight %}
+
+E ingresamos las nuevas contraseñas.-
+
+{% highlight javascript linenos %}
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+{% endhighlight %}
 
 ## Conclusiones
 

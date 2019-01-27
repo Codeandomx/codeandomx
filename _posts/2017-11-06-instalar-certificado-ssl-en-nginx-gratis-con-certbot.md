@@ -1,5 +1,6 @@
 ---
 title: Instalar certificado SSL en nginx gratis con certbot
+layout: post
 author: Paulo Andrade
 categories: nginx
 tags: nginx ubuntu certbot ssl
@@ -54,7 +55,8 @@ $ sudo apt-get install software-properties-common
 Agregamos el PPA de Certbot.-
 
 {% highlight javascript linenos %}
-$ sudo add-apt-repository ppa: certbot / certbot 
+$ sudo add-apt-repository universe
+$ sudo add-apt-repository ppa:certbot/certbot
 {% endhighlight %}
 
 Volvemos actualizar la lista de paquetes.-
