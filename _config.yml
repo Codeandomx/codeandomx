@@ -23,6 +23,13 @@ destination: "./_site"
 permalink: "/articulos/:title.html"
 paginate: 8
 paginate_path: "/page:num/"
+pagination:
+  enabled: true
+  categories:
+    - webpack
+  tags:
+    - javascript
+    - es6
 comments: true
 defaults:
 - scope:
