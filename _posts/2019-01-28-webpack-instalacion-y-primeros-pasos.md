@@ -31,7 +31,7 @@ $ mkdir webpack-for-react && cd webpack-for-react
 Inicializamos nuestro proyecto creando el archivo "package.json" con el siguiente comando.-
 
 {% highlight javascript linenos %}
-$ npm inti
+$ npm init
 {% endhighlight %}
 
 Llenamos los campos que nos soliciten y al finalizar nos va a generar el archivo en el directorio principal de nuestro proyecto, un ejemplo del "package.json" es el siguiente.-
