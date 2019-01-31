@@ -73,7 +73,7 @@ Puedes encontrar el código de ejemplo de este articulo en.-
 
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
-* Articulo anterior: [Webpack instalación y primeros pasos](/articulos/trabajando-con-formularios-en-reactjs.html)
+* Articulo anterior: [Webpack instalación y primeros pasos](/articulos/webpack-instalacion-y-primeros-pasos.html)
 * Curso: [Curso de Webpack](https://github.com/Codeandomx/webpack-for-react)
 
 Que tengan feliz código.

@@ -135,7 +135,7 @@ Puedes encontrar el código de ejemplo de este articulo en.-
 
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
-* Articulo siguiente: [Webpack modo de producción y desarrollo](/articulos/webpack-instalacion-y-primeros-pasos.html)
+* Articulo siguiente: [Webpack modo de producción y desarrollo](/articulos/webpack-modo-de-produccion-y-desarrollo.html)
 * Curso: [Curso de Webpack](https://github.com/Codeandomx/webpack-for-react)
 
 Que tengan feliz código.
