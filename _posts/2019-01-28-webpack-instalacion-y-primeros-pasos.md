@@ -12,6 +12,8 @@ Webpack es un paquete de módulos estáticos para nuestras a**plicaciones JavaSc
 
 ![Webpack map](/img/webpack map.jpg)
 
+Este articulo forma parte del <a href="https://github.com/Codeandomx/webpack-for-react" target="_blank">Curso de Angular</a>, puedes acceder al código de ejemplo de este articulo desde el repositorio de Github.
+
 ## Archivo de configuración de webpack
 
 Desde la versión 4.0.0, **Webpack** no requiere un archivo de configuración para agrupar nuestro proyecto, sin embargo, es fácilmente configurable para adaptarse mejor a  nuestras necesidades, te comparto el enlace por si necesitas saber mas sobre esta configuración.-
@@ -126,5 +128,14 @@ No te preocupes, lo vamos a solucionar en el próximo articulo donde aprenderemo
 ## Conclusiones
 
 En este articulo dimos los primeros pasos para trabajar con Webpack, poco a poco vamos ir agregando configuraciones para preparar nuestro entorno de desarrollo para crear aplicaciones con [react](/articulos/introduccion-a-react-creando-aplicacion-basica.html).
+
+Puedes encontrar el código de ejemplo de este articulo en.-
+
+* [Github Codeando](https://github.com/Codeandomx/webpack-for-react).
+
+Si te interesa el tema puedes continuar con los siguientes enlaces.-
+
+* Articulo siguiente: [Webpack modo de producción y desarrollo](/articulos/webpack-instalacion-y-primeros-pasos.html)
+* Curso: [Curso de Webpack](https://github.com/Codeandomx/webpack-for-react)
 
 Que tengan feliz código.
