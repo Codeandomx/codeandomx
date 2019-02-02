@@ -31,8 +31,11 @@ function toggle() {
 function menuClick() {
 	if (document.addEventListener && icon !== null) {
 		icon.addEventListener('click', toggle);
+
+		document.getElementById('btn-close-customer').addEventListener('click', toggle);
 	} else if (document.attachEvent && icon !== null) {
 		icon.attachEvent('onclick', toggle);
+		document.getElementById('btn-close-customer').attachEvent('onclick', toggle);
 	} else {
 		return;
 	}
