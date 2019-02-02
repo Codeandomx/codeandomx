@@ -13,7 +13,7 @@ Seguimos con la guía de configuración de **[Webpack](/articulos/webpack-instal
 Con esta nueva opción Webpack intenta **reducir su configuración** requerida para poder obtener una compilación bastante útil con solo seleccionar uno de los dos modos que nos brinda.
 
 <div class="redes-background">
-Este articulo forma parte del <a href="https://github.com/Codeandomx/webpack-for-react" target="_blank">Curso de Angular</a>, puedes acceder al código de ejemplo de este articulo desde el repositorio de Github.
+Este articulo forma parte del <a href="https://github.com/Codeandomx/webpack-for-react" target="_blank">Curso de Webpack</a>, puedes acceder al código de ejemplo de este articulo desde el repositorio de Github.
 </div>
 
 ## Webpack development mode
@@ -53,7 +53,7 @@ Si queremos trabajar con el modo desarrollo, ejecutamos el siguiente comando.-
 $ npm run dev
 {% endhighlight %}
 
-> Con el modo desarrollo estaremos optimizando para une mayor velocidad y nos proporciona un paquete no minificado.
+> Con el modo desarrollo estaremos optimizando para una mayor velocidad y nos proporciona un paquete no minificado.
 
 Si queremos trabajar con el modo producción, ejecutamos el siguiente comando.-
 
@@ -74,6 +74,7 @@ Puedes encontrar el código de ejemplo de este articulo en.-
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
 * Articulo anterior: [Webpack instalación y primeros pasos](/articulos/webpack-instalacion-y-primeros-pasos.html)
+* Articulo siguiente: [Webpack anulando la entrada y salida por defecto](/articulos/webpack-modo-de-produccion-y-desarrollo.html)
 * Curso: [Curso de Webpack](https://github.com/Codeandomx/webpack-for-react)
 
 Que tengan feliz código.
