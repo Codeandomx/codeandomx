@@ -12,7 +12,7 @@ Webpack es un paquete de módulos estáticos para nuestras a**plicaciones JavaSc
 
 ![Webpack map](/img/webpack map.jpg)
 
-Este articulo forma parte del <a href="https://github.com/Codeandomx/webpack-for-react" target="_blank">Curso de Angular</a>, puedes acceder al código de ejemplo de este articulo desde el repositorio de Github.
+Este articulo forma parte del <a href="https://github.com/Codeandomx/webpack-for-react" target="_blank">Curso de Webpack</a>, puedes acceder al código de ejemplo de este articulo desde el repositorio de Github.
 
 ## Archivo de configuración de webpack
 
