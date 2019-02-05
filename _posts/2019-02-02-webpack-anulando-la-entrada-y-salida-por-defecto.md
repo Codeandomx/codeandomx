@@ -67,7 +67,8 @@ Puedes encontrar el código de ejemplo de este articulo en.-
 
 Si te interesa el tema puedes continuar con los siguientes enlaces.-
 
-* Articulo anterior: [Webpack modo de producción y desarrollo](articulos/webpack-modo-de-produccion-y-desarrollo.html)
+* Articulo anterior: [Webpack modo de producción y desarrollo](/articulos/webpack-modo-de-produccion-y-desarrollo.html)
+* Articulo siguiente: [Webpack trnaspilando código javascipt es6 con babel](/articulos/webpack-transpilando-javascript-es6-con-babel-7.html) 
 * Curso: [Curso de Webpack](https://github.com/Codeandomx/webpack-for-react)
 
 Que tengan feliz código.
